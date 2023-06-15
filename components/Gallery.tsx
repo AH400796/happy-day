@@ -28,17 +28,25 @@ interface IProps {
 }
 
 const GalleryItem: React.FC<IItemProps> = ({ url, onClick }) => {
-  const [width] = useContext<number[]>(SizeContext);
+  const width: number = useContext(SizeContext);
+
   const handleOnClick = () => {
     onClick(url);
   };
+
   const imageWidth: number =
     width < 480 ? width - 30 : width < 768 ? 440 : width < 1280 ? 347 : 315;
   const imageHeight: number = (imageWidth * 3) / 5;
 
   return (
     <ItemWrapper onClick={handleOnClick}>
-      <CldImage src={url} width={imageWidth} height={imageHeight} alt="photo" />
+      <CldImage
+        src={url}
+        width={imageWidth}
+        height={imageHeight}
+        alt="photo"
+        priority
+      />
     </ItemWrapper>
   );
 };

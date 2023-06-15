@@ -1,20 +1,6 @@
 "use client";
 
 import styled from "styled-components";
-import Image from "next/image";
-
-export const StyledImage = styled(Image)`
-  width: 250px;
-  height: 116px;
-  @media screen and (min-width: 768px) {
-    width: 300px;
-    height: 139px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 400px;
-    height: 185px;
-  }
-`;
 
 export const StyledHeader = styled.header`
   padding: 20px 0;
@@ -34,6 +20,7 @@ export const StyledHeader = styled.header`
 `;
 
 export const HeaderWrapper = styled.div`
+  position: relative;
   height: 100%;
   display: flex;
   justify-content: space-between;

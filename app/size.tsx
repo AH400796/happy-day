@@ -3,18 +3,18 @@
 import { createContext } from "react";
 import { useState, useEffect } from "react";
 
-export const SizeContext = createContext<number[]>([]);
+export const SizeContext = createContext(0);
 
 interface Children {
   children: React.ReactNode;
 }
 
 const SizeProvider: React.FC<Children> = ({ children }) => {
-  const [windowSize, setWindowSize] = useState<number[]>([]);
+  const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
 
   useEffect(() => {
     const setSize = () => {
-      setWindowSize([window.innerWidth, window.innerHeight]);
+      setWindowSize(window.innerWidth);
     };
     setSize();
 

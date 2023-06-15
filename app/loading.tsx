@@ -10,7 +10,7 @@ const Loading: React.FC = () => {
         strokeColor="#4e6739"
         strokeWidth="5"
         animationDuration="0.75"
-        width="250"
+        width="150"
         visible={true}
       />
     </Wrapper>
