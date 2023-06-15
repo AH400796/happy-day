@@ -1,31 +1,31 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Ціни та умови замовлення",
+};
+
 import Image from "next/image";
 import Container from "@components/Container";
 import Section from "@components/Section";
-import Hero from "@components/Hero";
+
 import {
   ContentWrapper,
-  ContactTitle,
-  ContactTitleText,
-  ContactText,
-  AboutTitle,
-  AboutTitleText,
-  AboutText,
-} from "@styles/styled/MainPage.styled";
+  ConditionsTitle,
+  ConditionsTitleText,
+  ConditionsText,
+  PriceTitle,
+  PriceTitleText,
+  PriceText,
+} from "@styles/styled/PricePage.styled";
 
-export const metadata: Metadata = {
-  title: "Твій щасливий день",
-};
-
-const Home: React.FC = () => {
+const Prices: React.FC = () => {
   return (
     <Section>
       <Container>
         <ContentWrapper>
-          <Hero />
-          <AboutTitle>
+          <PriceTitle>
             <Image
               src="/icons/icon_crown.svg"
               width={25}
@@ -33,7 +33,7 @@ const Home: React.FC = () => {
               alt="crown"
               priority
             />
-            <AboutTitleText>Наша місія</AboutTitleText>
+            <PriceTitleText>Розцінки на фотосесію</PriceTitleText>
             <Image
               src="/icons/icon_crown.svg"
               width={25}
@@ -41,8 +41,8 @@ const Home: React.FC = () => {
               alt="crown"
               priority
             />
-          </AboutTitle>
-          <AboutText>
+          </PriceTitle>
+          <PriceText>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Exercitationem, ratione aperiam quasi ad excepturi animi,
@@ -77,8 +77,8 @@ const Home: React.FC = () => {
               voluptatem libero praesentium at quas nisi sed. Distinctio,
               consectetur enim.
             </p>
-          </AboutText>
-          <ContactTitle>
+          </PriceText>
+          <ConditionsTitle>
             <Image
               src="/icons/icon_crown.svg"
               width={25}
@@ -86,7 +86,9 @@ const Home: React.FC = () => {
               alt="crown"
               priority
             />
-            <ContactTitleText>Як з нами зв'язатись</ContactTitleText>
+            <ConditionsTitleText>
+              Правила та умови бронювання фотосесій
+            </ConditionsTitleText>
             <Image
               src="/icons/icon_crown.svg"
               width={25}
@@ -94,8 +96,8 @@ const Home: React.FC = () => {
               alt="crown"
               priority
             />
-          </ContactTitle>
-          <ContactText>
+          </ConditionsTitle>
+          <ConditionsText>
             <p>
               Якщо Ви хочете замовити фотосесію або зацікавленні в отриманні
               додаткової інформації щодо наших послуг, вільних до замовлення дат
@@ -107,11 +109,11 @@ const Home: React.FC = () => {
               Для цього на сайті Вам доступні наші контакти: номери мобільного
               зв'язку та адреси соцмереж Instagram, Facebook чи Telegram.
             </p>
-          </ContactText>
+          </ConditionsText>
         </ContentWrapper>
       </Container>
     </Section>
   );
 };
 
-export default Home;
+export default Prices;
