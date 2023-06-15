@@ -28,7 +28,7 @@ interface IProps {
 }
 
 const GalleryItem: React.FC<IItemProps> = ({ url, onClick }) => {
-  const width: number = useContext(SizeContext);
+  const [width] = useContext<number[]>(SizeContext);
 
   const handleOnClick = () => {
     onClick(url);

@@ -16,7 +16,7 @@ import Navigation from "./Navigation";
 import Contacts from "./Contacts";
 
 const Header: React.FC = () => {
-  const width: number = useContext(SizeContext);
+  const [width] = useContext<number[]>(SizeContext);
 
   return (
     <StyledHeader>

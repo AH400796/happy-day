@@ -50,7 +50,7 @@ export const MenuOverlay = styled.div<{ "data-menu": boolean }>`
   padding: 20px;
   transform: ${(props) => {
     if (!props[`data-menu`]) {
-      return `translate(0,-300px)`;
+      return `translate(0,-350px)`;
     } else {
       return `translate(0, 0)`;
     }
