@@ -14,7 +14,7 @@ export const FooterWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  column-gap: 50px;
+  gap: 20px;
 `;
 
 export const FooterContacts = styled.div`
@@ -22,11 +22,29 @@ export const FooterContacts = styled.div`
   flex-direction: column;
   justify-self: center;
   align-items: center;
-  align-self: flex-start;
-  column-gap: 50px;
+  align-self: center;
   gap: 10px;
 
   font-size: 16px;
+
+  @media screen and (min-width: 768px) {
+    align-self: flex-start;
+  }
+`;
+
+export const FooterContent = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  font-size: 16px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 export const FooterText = styled.span`

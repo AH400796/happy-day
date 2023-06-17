@@ -1,28 +1,34 @@
-/* eslint-disable react/no-unescaped-entities */
-
 import { Metadata } from "next";
 import Image from "next/image";
+import { ToastContainer } from "react-toastify";
+import { getFeedbacks } from "@utils/api";
 import Container from "@components/Container";
 import Section from "@components/Section";
 import Hero from "@components/Hero";
 import {
   ContentWrapper,
-  ContactTitle,
-  ContactTitleText,
-  ContactText,
   AboutTitle,
   AboutTitleText,
   AboutText,
+  ContactTitle,
+  ContactTitleText,
+  ContactText,
+  FeedbackTitle,
+  FeedbackTitleText,
+  FeedbackText,
 } from "@styles/styled/MainPage.styled";
 
 export const metadata: Metadata = {
   title: "Твій щасливий день",
 };
 
-const Home: React.FC = () => {
+const Home = async () => {
+  const response = await getFeedbacks();
+  console.log(response.data);
   return (
     <Section>
       <Container>
+        <ToastContainer />
         <ContentWrapper>
           <Hero />
           <AboutTitle>
@@ -78,6 +84,36 @@ const Home: React.FC = () => {
               consectetur enim.
             </p>
           </AboutText>
+          <FeedbackTitle>
+            <Image
+              src="/icons/icon_crown.svg"
+              width={25}
+              height={25}
+              alt="crown"
+              priority
+            />
+            <FeedbackTitleText>Відгуки про нас</FeedbackTitleText>
+            <Image
+              src="/icons/icon_crown.svg"
+              width={25}
+              height={25}
+              alt="crown"
+              priority
+            />
+          </FeedbackTitle>
+          <FeedbackText>
+            <p>
+              Якщо Ви хочете замовити фотосесію або зацікавленні в отриманні
+              додаткової інформації щодо наших послуг, вільних до замовлення дат
+              у графіку фотосесій, інформації щодо проведення фотосесії, локацій
+              чи є будь-які інші запитання - не соромтесь {"зв'язатись"} з
+              нашими представниками.
+            </p>
+            <p>
+              Для цього на сайті Вам доступні наші контакти: номери мобільного
+              {"зв'язку"} та адреси соцмереж Instagram, Facebook чи Telegram.
+            </p>
+          </FeedbackText>
           <ContactTitle>
             <Image
               src="/icons/icon_crown.svg"
@@ -86,7 +122,7 @@ const Home: React.FC = () => {
               alt="crown"
               priority
             />
-            <ContactTitleText>Як з нами зв'язатись</ContactTitleText>
+            <ContactTitleText>{"Як з нами зв'язатись"}</ContactTitleText>
             <Image
               src="/icons/icon_crown.svg"
               width={25}
@@ -100,12 +136,12 @@ const Home: React.FC = () => {
               Якщо Ви хочете замовити фотосесію або зацікавленні в отриманні
               додаткової інформації щодо наших послуг, вільних до замовлення дат
               у графіку фотосесій, інформації щодо проведення фотосесії, локацій
-              чи є будь-які інші запитання - не соромтесь зв'язатись з нашими
-              представниками.
+              чи є будь-які інші запитання - не соромтесь {"зв'язатись"} з
+              нашими представниками.
             </p>
             <p>
               Для цього на сайті Вам доступні наші контакти: номери мобільного
-              зв'язку та адреси соцмереж Instagram, Facebook чи Telegram.
+              {"зв'язку"} та адреси соцмереж Instagram, Facebook чи Telegram.
             </p>
           </ContactText>
         </ContentWrapper>

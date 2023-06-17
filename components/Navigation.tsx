@@ -9,8 +9,7 @@ const ActiveStyledLink: React.FC<{ href: string; children: string }> = ({
 }) => {
   const pathname: string = usePathname();
   const isActive: boolean =
-    pathname === href ||
-    (pathname.includes(href.replace(/tiffany/g, "")) && href !== "/");
+    pathname === href || (pathname.includes(href) && href !== "/");
   return (
     <StyledLink href={href} data-active={isActive}>
       {children}
@@ -22,7 +21,7 @@ const Navigation: React.FC = () => {
   return (
     <StyledNav>
       <ActiveStyledLink href="/">Головна</ActiveStyledLink>
-      <ActiveStyledLink href="/collections/tiffany">Колекції</ActiveStyledLink>
+      <ActiveStyledLink href="/collections">Колекції</ActiveStyledLink>
       <ActiveStyledLink href="/prices">Ціни та умови</ActiveStyledLink>
     </StyledNav>
   );

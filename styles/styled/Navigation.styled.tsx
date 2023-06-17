@@ -3,6 +3,10 @@
 import Link from "next/link";
 import styled from "styled-components";
 
+interface IStyledLinkProps {
+  "data-active"?: boolean;
+}
+
 export const StyledNav = styled.nav`
   display: flex;
   flex-direction: column;
@@ -20,7 +24,7 @@ export const StyledNav = styled.nav`
   }
 `;
 
-export const StyledLink = styled(Link)<{ [`data-active`]: boolean }>`
+export const StyledLink = styled(Link)<IStyledLinkProps>`
   font-size: 18px;
   font-weight: 700;
   color: ${(props) => (props[`data-active`] ? "#27B1DD" : "#4e6739")};

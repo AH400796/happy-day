@@ -4,6 +4,7 @@ import StyledComponentsRegistry from "@utils/registry";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import SizeProvider from "./size";
+
 import { ContentWrapper, StyledMain } from "@styles/styled/RootLayout.styled";
 
 export const metadata = {
@@ -32,6 +33,7 @@ const RootLayout: React.FC<Children> = ({ children }) => {
       <body className={play.className}>
         <StyledComponentsRegistry>
           <ContentWrapper>
+            
             <SizeProvider>
               <Header />
               <StyledMain>{children}</StyledMain>
