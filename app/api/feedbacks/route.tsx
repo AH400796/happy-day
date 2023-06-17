@@ -18,10 +18,7 @@ export async function POST(req: Request) {
 export async function GET() {
   try {
     await connectToDatabase();
-
     const result = await Feedback.find({});
-
-    console.log(result);
 
     return new Response(JSON.stringify(result), { status: 200 });
   } catch (error) {

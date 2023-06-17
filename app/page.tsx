@@ -1,10 +1,11 @@
 import { Metadata } from "next";
-import Image from "next/image";
 import { ToastContainer } from "react-toastify";
+import { FaCrown } from "react-icons/fa";
 import { getFeedbacks } from "@utils/api";
 import Container from "@components/Container";
 import Section from "@components/Section";
 import Hero from "@components/Hero";
+import FeedbackList from "@components/FeedbackList";
 import {
   ContentWrapper,
   AboutTitle,
@@ -16,15 +17,28 @@ import {
   FeedbackTitle,
   FeedbackTitleText,
   FeedbackText,
+  Anchor,
 } from "@styles/styled/MainPage.styled";
 
 export const metadata: Metadata = {
   title: "Твій щасливий день",
 };
 
+type El = {
+  userName: string;
+  userFeedback: string;
+  rating: string;
+};
 const Home = async () => {
   const response = await getFeedbacks();
-  console.log(response.data);
+  const averageRating: number =
+    response.data.reduce((acc: number, el: El) => {
+      return acc + Number(el.rating);
+    }, 0) / response.data.length;
+  const roundedAverageRating =
+    averageRating % Number(averageRating.toFixed(0)) > 0
+      ? averageRating.toFixed(1)
+      : averageRating.toFixed(0);
   return (
     <Section>
       <Container>
@@ -32,21 +46,9 @@ const Home = async () => {
         <ContentWrapper>
           <Hero />
           <AboutTitle>
-            <Image
-              src="/icons/icon_crown.svg"
-              width={25}
-              height={25}
-              alt="crown"
-              priority
-            />
+            <FaCrown size={25} color={"#ffc803"} />
             <AboutTitleText>Наша місія</AboutTitleText>
-            <Image
-              src="/icons/icon_crown.svg"
-              width={25}
-              height={25}
-              alt="crown"
-              priority
-            />
+            <FaCrown size={25} color={"#ffc803"} />
           </AboutTitle>
           <AboutText>
             <p>
@@ -85,51 +87,31 @@ const Home = async () => {
             </p>
           </AboutText>
           <FeedbackTitle>
-            <Image
-              src="/icons/icon_crown.svg"
-              width={25}
-              height={25}
-              alt="crown"
-              priority
-            />
-            <FeedbackTitleText>Відгуки про нас</FeedbackTitleText>
-            <Image
-              src="/icons/icon_crown.svg"
-              width={25}
-              height={25}
-              alt="crown"
-              priority
-            />
+            <FaCrown size={25} color={"#ffc803"} />
+            <FeedbackTitleText>
+              Ваші відгуки про нас -{"  "} {roundedAverageRating}/5
+              <FaCrown size={25} color={"#ffc803"} />
+            </FeedbackTitleText>
+            <FaCrown size={25} color={"#ffc803"} />
           </FeedbackTitle>
-          <FeedbackText>
-            <p>
-              Якщо Ви хочете замовити фотосесію або зацікавленні в отриманні
-              додаткової інформації щодо наших послуг, вільних до замовлення дат
-              у графіку фотосесій, інформації щодо проведення фотосесії, локацій
-              чи є будь-які інші запитання - не соромтесь {"зв'язатись"} з
-              нашими представниками.
-            </p>
-            <p>
-              Для цього на сайті Вам доступні наші контакти: номери мобільного
-              {"зв'язку"} та адреси соцмереж Instagram, Facebook чи Telegram.
-            </p>
-          </FeedbackText>
+          <div>
+            <FeedbackText>
+              <p>
+                В цій секції ви можете ознайомитись з відгуками наших клієнтів
+                та людей, що хотіли скористатись нашими послугами, але чомусь
+                передумали. Якщо ж ви хочете залишити свій відгук - запрошуємо
+                скористатись <Anchor href={`#feedBack`}> формою відгуку</Anchor>{" "}
+                внизу сторінки.
+              </p>
+            </FeedbackText>
+
+            <FeedbackList feedbacks={response.data} />
+          </div>
+
           <ContactTitle>
-            <Image
-              src="/icons/icon_crown.svg"
-              width={25}
-              height={25}
-              alt="crown"
-              priority
-            />
+            <FaCrown size={25} color={"#ffc803"} />
             <ContactTitleText>{"Як з нами зв'язатись"}</ContactTitleText>
-            <Image
-              src="/icons/icon_crown.svg"
-              width={25}
-              height={25}
-              alt="crown"
-              priority
-            />
+            <FaCrown size={25} color={"#ffc803"} />
           </ContactTitle>
           <ContactText>
             <p>

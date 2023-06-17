@@ -1,9 +1,10 @@
+import { FaCrown } from "react-icons/fa";
 import {
   StyledName,
   StyledRating,
   StyledFeedback,
   WrapperStyled,
-  Wrapper,
+  WrapperTitle,
 } from "@styles/styled/FeedbackItem.styled";
 
 interface IProps {
@@ -15,11 +16,14 @@ interface IProps {
 const FeedbackItem: React.FC<IProps> = ({ userName, userFeedback, rating }) => {
   return (
     <WrapperStyled>
-      <Wrapper>
-        <StyledName></StyledName>
-        <StyledRating></StyledRating>
-      </Wrapper>
-      <StyledFeedback></StyledFeedback>
+      <WrapperTitle>
+        <StyledName>{userName}</StyledName>
+        <StyledRating>
+          {rating}
+          <FaCrown size={15} color={"#4e6739"} />
+        </StyledRating>
+      </WrapperTitle>
+      <StyledFeedback>{`"${userFeedback}"`}</StyledFeedback>
     </WrapperStyled>
   );
 };

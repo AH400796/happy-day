@@ -1,9 +1,9 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
-import { FaPlay, FaPause } from "react-icons/fa";
+import { FaPlay, FaPause, FaCrown } from "react-icons/fa";
 import { IoVolumeMute, IoVolumeHigh } from "react-icons/io5";
-import Image from "next/image";
+
 import {
   HeroVideo,
   HeroTitle,
@@ -63,23 +63,11 @@ const Hero: React.FC = () => {
   return (
     <>
       <HeroTitle>
-        <Image
-          src="/icons/icon_crown.svg"
-          width={25}
-          height={25}
-          alt="crown"
-          priority
-        />
+        <FaCrown size={25} color={"#ffc803"} />
         <HeroTitleText>
           Замовте індивідуальну або групову дитячу фотосесію в вишуканому стилі
         </HeroTitleText>
-        <Image
-          src="/icons/icon_crown.svg"
-          width={25}
-          height={25}
-          alt="crown"
-          priority
-        />
+        <FaCrown size={25} color={"#ffc803"} />
       </HeroTitle>
       <HeroVideoWrapper>
         <HeroVideo

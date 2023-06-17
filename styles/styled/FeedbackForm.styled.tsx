@@ -100,10 +100,6 @@ export const StyledInput = styled(Field)`
   @media screen and (min-width: 768px) {
     font-size: 16px;
   }
-
-  @media screen and (min-width: 1280px) {
-    font-size: 18px;
-  }
 `;
 
 export const StyledTextarea = styled.textarea`
@@ -128,10 +124,6 @@ export const StyledTextarea = styled.textarea`
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    font-size: 18px;
   }
 `;
 
@@ -170,12 +162,11 @@ export const FeedbackBtn = styled.button`
   border: 2px solid #ffc803;
   border-radius: 10px;
   background-color: #27b1dd;
-  color: #ffc803;
+  color: #5b6652;
   cursor: pointer;
 
   &:hover,
   &:focus {
     background-color: #ffc803;
-    color: #27b1dd;
   }
 `;

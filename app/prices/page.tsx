@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Ціни та умови замовлення",
 };
 
-import Image from "next/image";
+import { FaCrown } from "react-icons/fa";
 import Container from "@components/Container";
 import Section from "@components/Section";
 
@@ -26,21 +26,9 @@ const Prices: React.FC = () => {
       <Container>
         <ContentWrapper>
           <PriceTitle>
-            <Image
-              src="/icons/icon_crown.svg"
-              width={25}
-              height={25}
-              alt="crown"
-              priority
-            />
+            <FaCrown size={25} color={"#ffc803"} />
             <PriceTitleText>Розцінки на фотосесію</PriceTitleText>
-            <Image
-              src="/icons/icon_crown.svg"
-              width={25}
-              height={25}
-              alt="crown"
-              priority
-            />
+            <FaCrown size={25} color={"#ffc803"} />
           </PriceTitle>
           <PriceText>
             <p>
@@ -79,23 +67,11 @@ const Prices: React.FC = () => {
             </p>
           </PriceText>
           <ConditionsTitle>
-            <Image
-              src="/icons/icon_crown.svg"
-              width={25}
-              height={25}
-              alt="crown"
-              priority
-            />
+            <FaCrown size={25} color={"#ffc803"} />
             <ConditionsTitleText>
               Правила та умови бронювання фотосесій
             </ConditionsTitleText>
-            <Image
-              src="/icons/icon_crown.svg"
-              width={25}
-              height={25}
-              alt="crown"
-              priority
-            />
+            <FaCrown size={25} color={"#ffc803"} />
           </ConditionsTitle>
           <ConditionsText>
             <p>

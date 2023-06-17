@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Image from "next/image";
+import { FaCrown } from "react-icons/fa";
 
 import {
   CollectionsWrapper,
@@ -16,23 +16,11 @@ const Collections: React.FC = () => {
   return (
     <CollectionsWrapper>
       <CollectionsTitle>
-        <Image
-          src="/icons/icon_crown.svg"
-          width={25}
-          height={25}
-          alt="crown"
-          priority
-        />
+        <FaCrown size={25} color={"#ffc803"} />
         <CollectionsTitleText>
           Колекції доступні для бронювань фотосесій
         </CollectionsTitleText>
-        <Image
-          src="/icons/icon_crown.svg"
-          width={25}
-          height={25}
-          alt="crown"
-          priority
-        />
+        <FaCrown size={25} color={"#ffc803"} />
       </CollectionsTitle>
       <CollectionsText>
         <p>

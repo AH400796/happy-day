@@ -78,7 +78,7 @@ const FeedbackForm: React.FC = () => {
   };
 
   return (
-    <FormWrapper>
+    <FormWrapper id="feedBack">
       <Formik
         initialValues={initialValues}
         onSubmit={handleOnSubmit}
