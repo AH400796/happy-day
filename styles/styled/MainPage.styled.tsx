@@ -132,7 +132,6 @@ export const ContactText = styled.div`
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 20px;
-    column-count: 3;
     column-gap: 50px;
     font-size: 20px;
   }

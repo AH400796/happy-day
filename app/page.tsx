@@ -35,57 +35,60 @@ const Home = async () => {
           </AboutTitle>
           <AboutText>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Exercitationem, ratione aperiam quasi ad excepturi animi,
-              reprehenderit sapiente tempore error mollitia non sequi
-              voluptatibus suscipit odit quo aspernatur nihil quis provident
-              natus! Possimus accusamus consectetur perspiciatis porro ratione
-              aperiam itaque nesciunt, dolore qui! Assumenda, inventore numquam
-              blanditiis rem, ut, cum dicta amet enim voluptates dolor labore
-              voluptas. Suscipit aut doloribus tempore sapiente a officia,
-              aspernatur recusandae veniam quisquam voluptatem necessitatibus
-              harum minima deleniti reprehenderit quas at dolorum molestias.
-              Nisi accusamus distinctio incidunt quis ex excepturi consequuntur
-              iste unde veniam aspernatur. Nostrum consequatur, mollitia sequi
-              corporis eius a hic, ea nobis totam recusandae libero iusto,
-              repellat minima inventore non fugiat voluptatum repellendus fugit!
-              Repellendus obcaecati debitis laborum nulla recusandae iure
-              dolorum, tenetur unde iste dolores pariatur, sapiente totam vitae
-              officiis porro maxime molestias delectus? Laboriosam officiis
-              tenetur recusandae iure? Dignissimos architecto incidunt
-              recusandae provident vel doloremque quasi molestias laudantium
-              totam autem et beatae dolore, animi nobis, asperiores suscipit
-              quos accusamus. Corrupti aspernatur adipisci reprehenderit
-              temporibus illum molestias doloremque perferendis eius minima
-              repudiandae, architecto, nemo id et dolorum pariatur, facilis
-              vitae similique. Minima, omnis quas quaerat ut repudiandae
-              similique commodi quod natus et voluptate alias, ratione minus
-              placeat modi enim totam quisquam unde rerum cupiditate quis, non
-              quidem maiores mollitia. Tempora, soluta illum aspernatur
-              praesentium, pariatur nemo id at fugiat, sequi animi neque quia!
-              Officia sit debitis nisi magni? Fugiat molestiae provident fugit,
-              neque autem soluta esse velit non molestias vitae earum laboriosam
-              voluptatem libero praesentium at quas nisi sed. Distinctio,
-              consectetur enim.
+              Мабуть кожна юна дівчинка, вперше приміряючи вдома перед зеркалом
+              мамине намисто, одягаючи мамині речі та великі туфлі на шпильці,
+              використовуючи губну мамину помаду чи {"рум'яна"}, подумки мріє
+              подорослішати, на мить перевтілитись та стати схожою на справжню
+              леді.
+            </p>
+            <p>
+              Ми - один з перших українських креативних дитячих фотопроєктів,
+              мета якого - допомогти реалізувати ці дитячі мрії, перевтілити
+              дівчаток в різноманітних персонажів - від елегантної леді до
+              казкової принцеси, зробити дитячу фотосесію незабутньою подією для
+              Вас і Вашої дитини.
+            </p>
+            <p>
+              Наша команда дуже відповідально підходить до кожного проєкту і
+              створює ідеальний образ кожного персонажа. Ми ретельно підбираємо
+              макіяж, зачіску та аксесуари, щоб підкреслити природну красу і
+              виразити унікальну особистість кожної маленької моделі. Під час
+              фотосесії, ми створимо магічну атмосферу, де Ваша донечка разом зі
+              своїми подружками зможуть відчути себе справжніми зірками або
+              казковими героями. Використовуючи професійне освітлення, красиві
+              декорації та професійні фото та відеозйомку ми створимо неповторні
+              кадри, щоб зберегти кожну емоцію та відобразити її на знімку.
+              Після фотосесії, у Вас буде великий вибір фотографій з яких Ви
+              зможете обрати ті, що стануть незабутніми спогадами про дитинство
+              Вашої донечки. Кожен знімок буде шедевром, що подумки переноситеме
+              переглядача в світ дитячих мрій та фантазій.
+            </p>
+            <p>
+              Ми розуміємо, наскільки важливо зберегти згадку про цей особливий
+              період у житті кожної дитини і ми зробимо все можливе, щоб ваша
+              дитяча фотосесія стала неповторною та гідною називатись одним з
+              незабутніх спогадів дитинства.
             </p>
           </AboutText>
           <Feedback />
           <ContactTitle>
             <FaCrown size={25} color={"#ffc803"} />
-            <ContactTitleText>{"Як з нами зв'язатись"}</ContactTitleText>
+            <ContactTitleText>{"Зв'язок з нами"}</ContactTitleText>
             <FaCrown size={25} color={"#ffc803"} />
           </ContactTitle>
           <ContactText>
             <p>
               Якщо Ви хочете замовити фотосесію або зацікавленні в отриманні
               додаткової інформації щодо наших послуг, вільних до замовлення дат
-              у графіку фотосесій, інформації щодо проведення фотосесії, локацій
-              чи є будь-які інші запитання - не соромтесь {"зв'язатись"} з
+              у графіку фотосесій, інформації щодо локацій проведення фотосесії
+              чи у Вас є будь-які інші запитання - не соромтесь {"зв'язатись"} з
               нашими представниками.
             </p>
             <p>
-              Для цього на сайті Вам доступні наші контакти: номери мобільного
-              {"зв'язку"} та адреси соцмереж Instagram, Facebook чи Telegram.
+              Скористайтесь для цього нашими контактами, розміщеними на сайті:
+              номерами мобільного {"зв'язку"} та адресами соцмереж Instagram,
+              Facebook чи Telegram. Ми з радістю надамо Вам будь яку інформацію,
+              що Вас цікавить.
             </p>
           </ContactText>
         </ContentWrapper>

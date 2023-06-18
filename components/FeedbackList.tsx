@@ -12,14 +12,14 @@ import {
 } from "@styles/styled/FeedbackList.styled";
 
 const FeedbackList: React.FC<any> = ({ feedbacks }) => {
-  const [viewIndexes, setViewIndexes] = useState<number[]>([0, 5]);
+  const [viewIndexes, setViewIndexes] = useState<number[]>([0, 2]);
 
   const handleIncrease = () => {
-    setViewIndexes((prevState) => [prevState[0] + 6, prevState[1] + 6]);
+    setViewIndexes((prevState) => [prevState[0] + 3, prevState[1] + 3]);
   };
 
   const handleDecrease = () => {
-    setViewIndexes((prevState) => [prevState[0] - 6, prevState[1] - 6]);
+    setViewIndexes((prevState) => [prevState[0] - 3, prevState[1] - 3]);
   };
 
   return (

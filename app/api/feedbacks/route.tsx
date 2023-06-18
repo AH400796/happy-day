@@ -24,7 +24,6 @@ export async function GET() {
   console.log("in route");
   try {
     await connectToDatabase();
-    console.log("DB connected");
     const result = await Feedback.find({});
     const headers = {
       "Content-Type": "application/json",

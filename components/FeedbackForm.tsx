@@ -143,7 +143,7 @@ const FeedbackForm: React.FC = () => {
                 >
                   Очистити
                 </FeedbackBtn>
-                <FeedbackBtn type="submit">Опублікувати</FeedbackBtn>
+                <FeedbackBtn type="submit">Надіслати</FeedbackBtn>
               </BtnWrapper>
             </StyledForm>
           );
