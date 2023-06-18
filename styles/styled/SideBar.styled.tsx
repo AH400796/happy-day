@@ -90,7 +90,7 @@ export const StyledLink = styled(Link)<IStyledLinkProps>`
   background: ${(props) =>
     props[`data-active`]
       ? "linear-gradient(180deg, #ffc803 0%, #f8ed52 100%)"
-      : "linear-gradient(180deg, #27b1dd 0%, #a8e8fd 100%)"};
+      : "linear-gradient(180deg, #f15232 0%, #d87662 100%)"};
   &:hover,
   &:focus {
     color: #27b1dd;

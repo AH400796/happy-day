@@ -42,9 +42,9 @@ const Feedback: React.FC = () => {
   return (
     <>
       <FeedbackTitle>
-        <FaCrown size={25} color={"#f15232"} />
+        <FaCrown size={25} color={"#ffc803"} />
         <FeedbackTitleText>Відгуки</FeedbackTitleText>
-        <FaCrown size={25} color={"#f15232"} />
+        <FaCrown size={25} color={"#ffc803"} />
       </FeedbackTitle>
       <Suspense fallback={<Loader width="100" />}>
         <FeedbackText>
