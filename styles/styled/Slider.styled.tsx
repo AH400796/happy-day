@@ -23,11 +23,13 @@ export const Overlay = styled.div`
 `;
 
 export const ModalWindow = styled.div`
+  position: relative;
+  z-index: 10000;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #4e6739;
+  background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
   overflow: hidden;
 `;
 

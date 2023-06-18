@@ -1,6 +1,7 @@
 "use client";
 
 import { useContext, useEffect } from "react";
+import { createPortal } from "react-dom";
 import SimpleImageSlider from "react-simple-image-slider";
 import { SizeContext } from "@app/size";
 import { IoMdClose } from "react-icons/io";
@@ -22,6 +23,8 @@ interface IProps {
   onClose: () => void;
   startIndex: number;
 }
+
+const modalRoot: HTMLElement | null = document.querySelector("#modal-root")!;
 
 const Slider: React.FC<IProps> = ({ onClose, collection, startIndex }) => {
   const [width] = useContext<number[]>(SizeContext);
@@ -46,7 +49,7 @@ const Slider: React.FC<IProps> = ({ onClose, collection, startIndex }) => {
   const sliderWidth = width - 80;
   const sliderHeight = (sliderWidth * 3) / 6;
 
-  return (
+  return createPortal(
     <Overlay onClick={handleBackdropClick}>
       <ModalWindow>
         <SimpleImageSlider
@@ -62,7 +65,8 @@ const Slider: React.FC<IProps> = ({ onClose, collection, startIndex }) => {
           <IoMdClose size={20} color={"#ffc107"} />
         </SliderCloseButton>
       </ModalWindow>
-    </Overlay>
+    </Overlay>,
+    modalRoot
   );
 };
 
