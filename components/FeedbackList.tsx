@@ -27,7 +27,6 @@ const FeedbackList: React.FC<any> = ({ feedbacks }) => {
       <StyledFeedbackList>
         {feedbacks.map((feedback: any, index: number) => {
           const { _id, userName, userFeedback, rating } = feedback;
-          console.log(index);
           const isVisibleFeedback: boolean =
             index >= viewIndexes[0] && index <= viewIndexes[1];
           return (
