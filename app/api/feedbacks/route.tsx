@@ -21,8 +21,12 @@ export async function GET() {
     await connectToDatabase();
     console.log("DB connected");
     const result = await Feedback.find({});
+    const headers = {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+    };
 
-    return new Response(JSON.stringify(result), { status: 200 });
+    return new Response(JSON.stringify(result), { status: 200, headers });
   } catch (error) {
     notify("error", "Вибачте, щось пішло не так... Спробуйте ще раз!");
   }
