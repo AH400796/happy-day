@@ -86,14 +86,14 @@ export const StyledLink = styled(Link)<IStyledLinkProps>`
   padding: 0 20px;
   margin-bottom: 10px;
   border-radius: 50px 0 50px 0;
-  color: #4e6739;
+  color: ${(props) => (props[`data-active`] ? "#f15232" : "#4e6739")};
   background: ${(props) =>
     props[`data-active`]
       ? "linear-gradient(180deg, #ffc803 0%, #f8ed52 100%)"
       : "linear-gradient(180deg, #f15232 0%, #d87662 100%)"};
   &:hover,
   &:focus {
-    color: #27b1dd;
+    color: #f15232;
     background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
   }
 
