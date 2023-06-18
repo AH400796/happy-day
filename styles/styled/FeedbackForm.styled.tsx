@@ -172,6 +172,7 @@ export const FeedbackBtn = styled.button`
 
   &:hover,
   &:focus {
-    background: #27b1dd;
+    background: #f15232;
+    color: #ffc803;
   }
 `;

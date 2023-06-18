@@ -28,7 +28,6 @@ export const ContactText = styled.a`
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
-    font-weight: 500;
   }
 
   &:hover,
