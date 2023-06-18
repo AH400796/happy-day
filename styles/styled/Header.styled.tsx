@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
   height: 156px;
   font-size: 30px;
 
-  background-color: #4e6739;
+  background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
   color: #ffc803;
 
   @media screen and (min-width: 768px) {

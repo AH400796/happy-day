@@ -50,7 +50,7 @@ const Feedback: React.FC = () => {
         <FeedbackText>
           {!isNaN(averageRating) && (
             <AverageRating>
-              Ваша оцінка -{"  "} {roundedAverageRating}/5{" "}
+              Оцінка клієнтів -{"  "} {roundedAverageRating}/5{" "}
               <FaCrown size={25} color={"#ffc803"} />
             </AverageRating>
           )}

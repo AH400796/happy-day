@@ -51,19 +51,17 @@ export const StyledRating = styled.span`
   align-items: center;
   gap: 5px;
   padding: 0 15px;
-  /* width: 100%; */
 `;
 
 export const StyledFeedback = styled.p`
   width: 100%;
-  height: 120px;
-
-  padding: 10px;
+  padding: 5px 10px;
   font-size: 14px;
   font-weight: 500;
   font-style: italic;
   text-indent: 10px;
-  border: 1px dotted #4e6739;
+  background: linear-gradient(180deg, #eee3a2 0%, #ffffff 100%);
+
   border-top: none;
 
   @media screen and (min-width: 768px) {

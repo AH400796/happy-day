@@ -21,8 +21,10 @@ export const Wrapper = styled.aside<IStyledProps>`
   width: ${(props) => (props[`data-collections`] ? "210px" : "45px")};
 
   padding: 10px 10px 20px;
-  background-color: ${(props) =>
-    props[`data-collections`] ? "#ffffff" : "#4e6739"};
+  background: ${(props) =>
+    props[`data-collections`]
+      ? "linear-gradient(180deg, #bbe29b 0%, #ffffff 100%)"
+      : "linear-gradient(180deg, #4e6739 0%, #93b674 100%);"};
 
   border: 3px solid #ffc803;
   border-radius: 50px 0 50px 0;
@@ -33,7 +35,7 @@ export const Wrapper = styled.aside<IStyledProps>`
   }
 
   @media screen and (min-width: 1280px) {
-    background-color: #ffffff;
+    background: linear-gradient(180deg, #bbe29b 0%, #ffffff 100%);
     position: static;
     width: 210px;
   }
@@ -52,25 +54,21 @@ export const CollectionsList = styled.ul<IStyledProps>`
 export const ListTitle = styled.p<IStyledProps>`
   display: ${(props) => (props[`data-collections`] ? "none" : "block")};
   width: 100%;
-  font-size: ${(props) => (props[`data-collections`] ? "16px" : "14px")};
+  font-size: 14px;
+  font-weight: 600;
 
   text-align: center;
-  padding: ${(props) =>
-    props[`data-collections`] ? "5px 5px 5px 5px" : "20px 0 0 0"};
+  padding: 20px 0 0 0;
 
   margin-bottom: 5px;
-  writing-mode: ${(props) =>
-    props[`data-collections`] ? "horizontal-tb" : "vertical-rl "};
-
+  writing-mode: vertical-rl;
   text-orientation: upright;
 
   border-radius: 10px 10px 0 0;
-  color: ${(props) => (props[`data-collections`] ? "#4e6739" : "#ffc803")};
+  color: #ffc803;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
-    padding: ${(props) =>
-      props[`data-collections`] ? "10px 10px 10px 10px" : "20px 0 0 0"};
   }
   @media screen and (min-width: 1280px) {
     display: none;

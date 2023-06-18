@@ -6,20 +6,15 @@ export const StyledFeedbackList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   list-style: none;
   gap: 30px;
-
   padding: 20px 10px;
-
   font-size: 14px;
   font-weight: 400;
 
   color: #4e6739;
-  border: 1px solid #4e6739;
-  border-top: none;
-  border-bottom: none;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -45,7 +40,6 @@ export const BtnWrapper = styled.div`
   align-items: center;
   padding-bottom: 20px;
   margin-bottom: 10px;
-  border: 1px solid #4e6739;
   font-size: 14px;
 
   border-top: none;

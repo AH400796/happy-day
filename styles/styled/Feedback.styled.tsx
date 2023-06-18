@@ -11,7 +11,7 @@ export const FeedbackTitle = styled.h2`
   padding: 5px 5px 10px 5px;
 
   border-radius: 10px 10px 0 0;
-  background-color: #4e6739;
+  background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
   color: #ffc803;
 
   @media screen and (min-width: 768px) {
@@ -48,10 +48,9 @@ export const FeedbackText = styled.div`
   font-weight: 400;
   line-height: 1.2;
   text-indent: 20px;
+  background: linear-gradient(180deg, #bbe29b 0%, #ffffff 100%);
 
   color: #4e6739;
-  border: 1px solid #4e6739;
-  border-bottom: none;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -83,6 +82,6 @@ export const AverageRating = styled.p`
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 18px;
+    font-size: 20px;
   }
 `;

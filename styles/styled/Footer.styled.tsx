@@ -6,7 +6,7 @@ export const StyledFooter = styled.footer`
   flex-shrink: 0;
   text-align: center;
   padding: 30px 0 10px;
-  background-color: #4e6739;
+  background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
 `;
 
 export const FooterWrapper = styled.div`
@@ -23,7 +23,7 @@ export const FooterContacts = styled.div`
   justify-self: center;
   align-items: center;
   align-self: center;
-  gap: 10px;
+  gap: 20px;
 
   font-size: 16px;
 
@@ -35,7 +35,7 @@ export const FooterContacts = styled.div`
 export const FooterContent = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   gap: 30px;
 

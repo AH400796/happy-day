@@ -18,7 +18,7 @@ export const PriceTitle = styled.h2`
   padding: 5px 5px 10px 5px;
 
   border-radius: 10px 10px 0 0;
-  background-color: #4e6739;
+  background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
   color: #ffc803;
 
   @media screen and (min-width: 768px) {
@@ -54,8 +54,7 @@ export const PriceText = styled.div`
   text-indent: 20px;
   column-count: 1;
   column-rule: 1px dotted #4e6739;
-
-  border: 1px solid #4e6739;
+  background: linear-gradient(180deg, #bbe29b 0%, #ffffff 100%);
   color: #4e6739;
 
   @media screen and (min-width: 768px) {
@@ -82,7 +81,7 @@ export const ConditionsTitle = styled.h2`
   padding: 5px 5px 10px 5px;
 
   border-radius: 10px 10px 0 0;
-  background-color: #4e6739;
+  background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
   color: #ffc803;
 
   @media screen and (min-width: 768px) {
@@ -119,8 +118,7 @@ export const ConditionsText = styled.div`
   text-indent: 20px;
   column-count: 1;
   column-rule: 1px dotted #4e6739;
-
-  border: 1px solid #4e6739;
+  background: linear-gradient(180deg, #bbe29b 0%, #ffffff 100%);
   color: #4e6739;
 
   @media screen and (min-width: 768px) {

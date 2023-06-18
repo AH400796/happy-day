@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { FaCrown } from "react-icons/fa";
 import { notify } from "@utils/notification";
+import { ToastContainer } from "react-toastify";
 import { Formik, FormikHelpers } from "formik";
 import * as yup from "yup";
 import { createFeedback } from "@utils/api";
@@ -59,10 +60,13 @@ const FeedbackForm: React.FC = () => {
     try {
       const response = await createFeedback(values);
       if (response.status === 201) {
-        notify("success", "Ваш відгук успішно опублікований!");
+        notify(
+          "success",
+          "Ваш відгук надіслано і незабаром він з'явиться на сайті"
+        );
       }
     } catch (error) {
-      notify("error", "Ваш відгук не опублікований");
+      notify("error", "Ваш відгук не надіслано");
     }
     resetForm();
     setFeedbackRating(0);
@@ -79,6 +83,7 @@ const FeedbackForm: React.FC = () => {
 
   return (
     <FormWrapper id="feedBack">
+      <ToastContainer />
       <Formik
         initialValues={initialValues}
         onSubmit={handleOnSubmit}

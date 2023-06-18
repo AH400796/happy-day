@@ -32,8 +32,7 @@ const RootLayout: React.FC<Children> = ({ children }) => {
     <html lang="uk">
       <body className={play.className}>
         <StyledComponentsRegistry>
-          <ContentWrapper>
-            
+          <ContentWrapper>            
             <SizeProvider>
               <Header />
               <StyledMain>{children}</StyledMain>

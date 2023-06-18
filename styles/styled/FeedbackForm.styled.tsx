@@ -158,12 +158,17 @@ export const FeedbackBtn = styled.button`
   align-self: flex-end;
   width: 140px;
   height: 35px;
+  font-size: 14px;
   font-weight: 600;
   border: 2px solid #ffc803;
   border-radius: 10px;
   background-color: #ffc803;
   color: #5b6652;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 
   &:hover,
   &:focus {

@@ -24,7 +24,7 @@ export async function GET() {
   console.log("in route");
   try {
     await connectToDatabase();
-    const result = await Feedback.find({});
+    const result = await Feedback.find({}).sort({ createdAt: -1 });
     const headers = {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",

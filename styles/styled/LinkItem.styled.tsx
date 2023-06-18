@@ -46,8 +46,10 @@ export const WrapperStyled = styled.div<IStyledProps>`
   padding: 0 20px;
   border-radius: 50px 0 50px 0;
 
-  background-color: ${(props) =>
-    props[`data-active`] ? "#ffc803" : "#4e6739"};
+  background: ${(props) =>
+    props[`data-active`]
+      ? "#ffc803"
+      : "linear-gradient(180deg, #4e6739 0%, #93b674 100%);"};
 
   font-size: 16px;
   font-weight: 700;
