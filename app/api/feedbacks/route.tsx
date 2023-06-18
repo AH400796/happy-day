@@ -9,7 +9,12 @@ export async function POST(req: Request) {
     await connectToDatabase();
     const newFeedback = new Feedback({ ...data });
     await newFeedback.save();
-    return new Response(JSON.stringify(newFeedback), { status: 201 });
+    const headers = {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+    };
+
+    return new Response(JSON.stringify(newFeedback), { status: 201, headers });
   } catch (error) {
     notify("error", "Вибачте, щось пішло не так... Спробуйте ще раз!");
   }
