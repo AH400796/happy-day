@@ -55,6 +55,7 @@ export const WrapperStyled = styled.div<IStyledProps>`
 
   &:hover,
   &:focus {
+    text-decoration: underline;
     background-color: #ffc803;
     color: #4e6739;
   }

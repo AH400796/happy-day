@@ -161,12 +161,12 @@ export const FeedbackBtn = styled.button`
   font-weight: 600;
   border: 2px solid #ffc803;
   border-radius: 10px;
-  background-color: #27b1dd;
+  background-color: #ffc803;
   color: #5b6652;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    background-color: #ffc803;
+    background-color: #27b1dd;
   }
 `;

@@ -5,11 +5,11 @@ import { FaCrown } from "react-icons/fa";
 import { getFeedbacks } from "@utils/api";
 import FeedbackList from "@components/FeedbackList";
 import {
-  Wrapper,
   FeedbackTitle,
   FeedbackTitleText,
   FeedbackText,
   Anchor,
+  AverageRating,
 } from "@styles/styled/Feedback.styled";
 
 interface IFeedback {
@@ -23,8 +23,10 @@ const Feedback: React.FC = () => {
 
   useEffect(() => {
     (async () => {
-      const response = await getFeedbacks();
-      setFeedbacks(response.data);
+      try {
+        const response = await getFeedbacks();
+        setFeedbacks(response.data);
+      } catch (error) {}
     })();
   }, []);
 
@@ -37,17 +39,20 @@ const Feedback: React.FC = () => {
       ? averageRating.toFixed(1)
       : averageRating.toFixed(0);
   return (
-    <Wrapper>
+    <>
       <FeedbackTitle>
         <FaCrown size={25} color={"#ffc803"} />
-        <FeedbackTitleText>
-          Ваші відгуки про нас -{"  "} {roundedAverageRating}/5
-          <FaCrown size={25} color={"#ffc803"} />
-        </FeedbackTitleText>
+        <FeedbackTitleText>Ваші відгуки про нас</FeedbackTitleText>
         <FaCrown size={25} color={"#ffc803"} />
       </FeedbackTitle>
       <div>
         <FeedbackText>
+          {roundedAverageRating && (
+            <AverageRating>
+              Ваша оцінка -{"  "} {roundedAverageRating}/5{" "}
+              <FaCrown size={25} color={"#ffc803"} />
+            </AverageRating>
+          )}
           <p>
             В цій секції ви можете ознайомитись з відгуками наших клієнтів та
             людей, що хотіли скористатись нашими послугами, але чомусь
@@ -56,10 +61,9 @@ const Feedback: React.FC = () => {
             внизу сторінки.
           </p>
         </FeedbackText>
-
         <FeedbackList feedbacks={feedbacks} />
       </div>
-    </Wrapper>
+    </>
   );
 };
 

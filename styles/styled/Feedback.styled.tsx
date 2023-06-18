@@ -2,12 +2,6 @@
 
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
-`;
-
 export const FeedbackTitle = styled.h2`
   display: flex;
   justify-content: space-between;
@@ -72,4 +66,23 @@ export const Anchor = styled.a`
   text-decoration: underline;
   color: #4e6739;
   font-weight: 600;
+`;
+
+export const AverageRating = styled.p`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
 `;
