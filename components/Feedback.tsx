@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { FaCrown } from "react-icons/fa";
 import { getFeedbacks } from "@utils/api";
 import FeedbackList from "@components/FeedbackList";
+import Loader from "./Loader";
 import {
   FeedbackTitle,
   FeedbackTitleText,
@@ -45,9 +46,9 @@ const Feedback: React.FC = () => {
         <FeedbackTitleText>Ваші відгуки про нас</FeedbackTitleText>
         <FaCrown size={25} color={"#ffc803"} />
       </FeedbackTitle>
-      <div>
+      <Suspense fallback={<Loader width="100" />}>
         <FeedbackText>
-          {roundedAverageRating && (
+          {!isNaN(averageRating) && (
             <AverageRating>
               Ваша оцінка -{"  "} {roundedAverageRating}/5{" "}
               <FaCrown size={25} color={"#ffc803"} />
@@ -62,7 +63,7 @@ const Feedback: React.FC = () => {
           </p>
         </FeedbackText>
         <FeedbackList feedbacks={feedbacks} />
-      </div>
+      </Suspense>
     </>
   );
 };

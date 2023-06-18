@@ -13,5 +13,6 @@ export const createFeedback = async (body: Values) => {
 };
 
 export const getFeedbacks = async () => {
+  console.log("axios starting");
   return await axios.get(`${BASE_URL}/api/feedbacks`);
 };

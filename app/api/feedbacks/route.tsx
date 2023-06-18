@@ -16,11 +16,11 @@ export async function POST(req: Request) {
 }
 
 export async function GET() {
+  console.log("in route");
   try {
     await connectToDatabase();
     console.log("DB connected");
     const result = await Feedback.find({});
-    console.log(result);
 
     return new Response(JSON.stringify(result), { status: 200 });
   } catch (error) {
