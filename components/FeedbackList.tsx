@@ -53,7 +53,7 @@ const FeedbackList: React.FC<any> = ({ feedbacks }) => {
         <FeedbackBtn
           type="button"
           onClick={handleIncrease}
-          disabled={viewIndexes[1] > feedbacks.length - 1}
+          disabled={viewIndexes[1] >= feedbacks.length - 1}
         >
           Наступні
           <AiOutlineArrowRight size={15} color={"inherit"} />

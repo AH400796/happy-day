@@ -87,12 +87,14 @@ export const StyledLink = styled(Link)<IStyledLinkProps>`
   margin-bottom: 10px;
   border-radius: 50px 0 50px 0;
   color: #4e6739;
-  background-color: #27b1dd;
-
+  background: ${(props) =>
+    props[`data-active`]
+      ? "linear-gradient(180deg, #ffc803 0%, #f8ed52 100%)"
+      : "linear-gradient(180deg, #27b1dd 0%, #a8e8fd 100%)"};
   &:hover,
   &:focus {
     color: #27b1dd;
-    background-color: #ffc803;
+    background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
   }
 
   @media screen and (min-width: 1280px) {

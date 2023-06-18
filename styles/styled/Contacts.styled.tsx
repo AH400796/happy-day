@@ -55,10 +55,10 @@ export const IconWrapper = styled.div`
   padding: 5px;
 
   border-radius: 50%;
-  background-color: #ffc803;
+  background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
 
   &:hover,
   &:focus {
-    background-color: #27b1dd;
+    background: #27b1dd;
   }
 `;

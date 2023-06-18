@@ -84,8 +84,8 @@ export const StyledInput = styled(Field)`
   font-size: 14px;
   padding: 5px 5px 5px 10px;
   border-radius: 5px;
+  background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
 
-  background-color: #ffc803;
   color: #4e6739;
 
   border: none;
@@ -108,7 +108,7 @@ export const StyledTextarea = styled.textarea`
   font-weight: 600;
   font-size: 14px;
 
-  background-color: #ffc803;
+  background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
   color: #4e6739;
 
   border-radius: 5px;
@@ -162,7 +162,7 @@ export const FeedbackBtn = styled.button`
   font-weight: 600;
   border: 2px solid #ffc803;
   border-radius: 10px;
-  background-color: #ffc803;
+  background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
   color: #5b6652;
   cursor: pointer;
 
@@ -172,6 +172,6 @@ export const FeedbackBtn = styled.button`
 
   &:hover,
   &:focus {
-    background-color: #27b1dd;
+    background: #27b1dd;
   }
 `;

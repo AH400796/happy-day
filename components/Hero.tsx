@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
       <HeroTitle>
         <FaCrown size={25} color={"#ffc803"} />
         <HeroTitleText>
-          Замовте індивідуальну або групову дитячу фотосесію в вишуканому стилі
+          Замовте індивідуальну або групову дитячу фотосесію
         </HeroTitleText>
         <FaCrown size={25} color={"#ffc803"} />
       </HeroTitle>

@@ -48,8 +48,8 @@ export const WrapperStyled = styled.div<IStyledProps>`
 
   background: ${(props) =>
     props[`data-active`]
-      ? "#ffc803"
-      : "linear-gradient(180deg, #4e6739 0%, #93b674 100%);"};
+      ? "linear-gradient(180deg, #ffc803 0%, #f8ed52 100%)"
+      : "linear-gradient(180deg, #4e6739 0%, #93b674 100%)"};
 
   font-size: 16px;
   font-weight: 700;
@@ -58,7 +58,7 @@ export const WrapperStyled = styled.div<IStyledProps>`
   &:hover,
   &:focus {
     text-decoration: underline;
-    background-color: #ffc803;
+    background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
     color: #4e6739;
   }
 `;

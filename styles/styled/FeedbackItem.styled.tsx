@@ -33,7 +33,7 @@ export const WrapperTitle = styled.div`
   width: 100%;
   border-radius: 10px 10px 0 0;
 
-  background-color: #ffc803;
+  background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
   color: #4e6739;
 `;
 

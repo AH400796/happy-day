@@ -47,15 +47,5 @@ export const ContactsWrapper = styled.div`
   border: 2px solid #ffc803;
   color: #ffc803;
   border-radius: 15px;
-  padding: 20px 20px 10px 20px;
-`;
-
-export const ContactTitle = styled.span`
-  position: absolute;
-  top: -12px;
-  left: 22%;
-  font-weight: 700;
-
-  padding: 0 10px;
-  background-color: #4e6739;
+  padding: 20px 20px 20px 20px;
 `;

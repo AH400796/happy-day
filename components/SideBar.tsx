@@ -26,8 +26,7 @@ const ActiveStyledLink: React.FC<{
   showCollections: boolean;
 }> = ({ href, children, showCollections }) => {
   const pathname: string = usePathname();
-  const isActive: boolean =
-    pathname === href || (pathname.includes(href) && href !== "/");
+  const isActive: boolean = pathname === href;
   return (
     <StyledLink
       href={href}

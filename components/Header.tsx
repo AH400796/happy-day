@@ -2,18 +2,17 @@
 
 import { useContext } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { SizeContext } from "@app/size";
 import Container from "./Container";
 import BurgerMenu from "./BurgerMenu";
+import Navigation from "./Navigation";
+import Contacts from "./Contacts";
 import {
   StyledHeader,
   HeaderWrapper,
   ContactsWrapper,
-  ContactTitle,
 } from "@styles/styled/Header.styled";
-
-import Navigation from "./Navigation";
-import Contacts from "./Contacts";
 
 const Header: React.FC = () => {
   const [width] = useContext<number[]>(SizeContext);
@@ -22,12 +21,19 @@ const Header: React.FC = () => {
     <StyledHeader>
       <Container>
         <HeaderWrapper>
-          <Image src="/logo.png" width={300} height={139} alt="logo" priority />
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              width={300}
+              height={139}
+              alt="logo"
+              priority
+            />
+          </Link>
           {width < 768 && <BurgerMenu />}
           {width >= 768 && <Navigation />}
           {width >= 768 && (
             <ContactsWrapper>
-              <ContactTitle>Контакти</ContactTitle>
               <Contacts />
             </ContactsWrapper>
           )}
