@@ -48,14 +48,9 @@ export const FooterContent = styled.div`
 `;
 
 export const FooterText = styled.span`
-  font-size: 12px;
-  font-weight: 500;
-  color: #ffc803;
-
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
-    font-weight: 700;
-  }
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffdd61;
 `;
 
 export const Wrapper = styled.div`

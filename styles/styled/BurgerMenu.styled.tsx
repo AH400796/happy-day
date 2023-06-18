@@ -45,7 +45,7 @@ export const MenuOverlay = styled.div<{ "data-menu": boolean }>`
   display: flex;
   justify-content: right;
   align-items: flex-start;
-  background: #ffc803;
+  background: #ffdd61;
   border-radius: 20px;
   padding: 20px;
   transform: ${(props) => {

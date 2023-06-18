@@ -26,7 +26,7 @@ export const Wrapper = styled.aside<IStyledProps>`
       ? "linear-gradient(180deg, #bbe29b 0%, #ffffff 100%)"
       : "linear-gradient(180deg, #4e6739 0%, #93b674 100%);"};
 
-  border: 3px solid #ffc803;
+  border: 3px solid #ffdd61;
   border-radius: 50px 0 50px 0;
   box-shadow: 2px 3px 5px #33333390;
 
@@ -65,7 +65,7 @@ export const ListTitle = styled.p<IStyledProps>`
   text-orientation: upright;
 
   border-radius: 10px 10px 0 0;
-  color: #ffc803;
+  color: #ffdd61;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -86,18 +86,22 @@ export const StyledLink = styled(Link)<IStyledLinkProps>`
   padding: 0 20px;
   margin-bottom: 10px;
   border-radius: 50px 0 50px 0;
-  color: ${(props) => (props[`data-active`] ? "#f15232" : "#4e6739")};
+  color: ${(props) => (props[`data-active`] ? "#f78629" : "#ffdd61")};
   background: ${(props) =>
     props[`data-active`]
-      ? "linear-gradient(180deg, #ffc803 0%, #f8ed52 100%)"
-      : "linear-gradient(180deg, #f15232 0%, #d87662 100%)"};
+      ? "linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%)"
+      : "linear-gradient(180deg, #f78629 0%, #f0b1a4 100%)"};
   &:hover,
   &:focus {
-    color: #f15232;
-    background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
+    color: #f78629;
+    background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
   }
 
   @media screen and (min-width: 1280px) {
     display: flex;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
   }
 `;

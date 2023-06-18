@@ -47,7 +47,7 @@ export const StyledInputLabel = styled.label`
   font-size: 14px;
   font-weight: 500;
 
-  color: #ffc803;
+  color: #ffdd61;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -71,7 +71,7 @@ export const StyledRadioSection = styled.div`
   font-size: 14px;
   font-weight: 500;
 
-  color: #ffc803;
+  color: #ffdd61;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -84,7 +84,7 @@ export const StyledInput = styled(Field)`
   font-size: 14px;
   padding: 5px 5px 5px 10px;
   border-radius: 5px;
-  background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
+  background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
 
   color: #4e6739;
 
@@ -108,7 +108,7 @@ export const StyledTextarea = styled.textarea`
   font-weight: 600;
   font-size: 14px;
 
-  background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
+  background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
   color: #4e6739;
 
   border-radius: 5px;
@@ -131,7 +131,7 @@ export const StyledRadioInput = styled.li<IStyledProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ${(props) => (props[`data-feedback`] ? "#f15232" : "#ffffff")};
+  color: ${(props) => (props[`data-feedback`] ? "#ffdd61" : "#ffffff")};
 `;
 
 export const RadioInput = styled(Field)`
@@ -160,9 +160,9 @@ export const FeedbackBtn = styled.button`
   height: 35px;
   font-size: 14px;
   font-weight: 600;
-  border: 2px solid #ffc803;
+  border: 2px solid #ffdd61;
   border-radius: 10px;
-  background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
+  background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
   color: #5b6652;
   cursor: pointer;
 
@@ -172,7 +172,7 @@ export const FeedbackBtn = styled.button`
 
   &:hover,
   &:focus {
-    background: #f15232;
-    color: #ffc803;
+    background: #f78629;
+    color: #ffdd61;
   }
 `;

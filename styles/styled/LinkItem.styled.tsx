@@ -27,7 +27,7 @@ export const StyledLabel = styled.label<IStyledProps>`
 
 export const StyledLink = styled(Link)<IStyledLinkProps>`
   text-decoration: none;
-  color: ${(props) => (props[`data-active`] ? "#4e6739" : "#ffc803")};
+  color: ${(props) => (props[`data-active`] ? "#4e6739" : "#ffdd61")};
 `;
 
 export const LabelText = styled.span`
@@ -48,17 +48,21 @@ export const WrapperStyled = styled.div<IStyledProps>`
 
   background: ${(props) =>
     props[`data-active`]
-      ? "linear-gradient(180deg, #ffc803 0%, #f8ed52 100%)"
+      ? "linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%)"
       : "linear-gradient(180deg, #4e6739 0%, #93b674 100%)"};
 
   font-size: 16px;
   font-weight: 700;
-  color: ${(props) => (props[`data-active`] ? "#4e6739" : "#ffc803")};
+  color: ${(props) => (props[`data-active`] ? "#4e6739" : "#ffdd61")};
 
   &:hover,
   &:focus {
     text-decoration: underline;
-    background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
+    background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
     color: #4e6739;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
   }
 `;

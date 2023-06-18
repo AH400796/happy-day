@@ -19,7 +19,7 @@ export const PriceTitle = styled.h2`
 
   border-radius: 10px 10px 0 0;
   background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
-  color: #ffc803;
+  color: #ffdd61;
 
   @media screen and (min-width: 768px) {
     padding: 5px 10px 10px 10px;
@@ -82,7 +82,7 @@ export const ConditionsTitle = styled.h2`
 
   border-radius: 10px 10px 0 0;
   background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
-  color: #ffc803;
+  color: #ffdd61;
 
   @media screen and (min-width: 768px) {
     padding: 5px 10px 10px 10px;

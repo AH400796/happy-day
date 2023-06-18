@@ -16,9 +16,9 @@ const Collections: React.FC = () => {
   return (
     <CollectionsWrapper>
       <CollectionsTitle>
-        <FaCrown size={25} color={"#ffc803"} />
+        <FaCrown size={25} color={"#ffdd61"} />
         <CollectionsTitleText>Колекції для фотосесій</CollectionsTitleText>
-        <FaCrown size={25} color={"#ffc803"} />
+        <FaCrown size={25} color={"#ffdd61"} />
       </CollectionsTitle>
       <CollectionsText>
         <p>

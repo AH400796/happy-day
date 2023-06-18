@@ -29,9 +29,9 @@ const Home = async () => {
         <ContentWrapper>
           <Hero />
           <AboutTitle>
-            <FaCrown size={25} color={"#ffc803"} />
+            <FaCrown size={25} color={"#ffdd61"} />
             <AboutTitleText>Наша місія</AboutTitleText>
-            <FaCrown size={25} color={"#ffc803"} />
+            <FaCrown size={25} color={"#ffdd61"} />
           </AboutTitle>
           <AboutText>
             <p>
@@ -72,9 +72,9 @@ const Home = async () => {
           </AboutText>
           <Feedback />
           <ContactTitle>
-            <FaCrown size={25} color={"#ffc803"} />
+            <FaCrown size={25} color={"#ffdd61"} />
             <ContactTitleText>{"Зв'язок з нами"}</ContactTitleText>
-            <FaCrown size={25} color={"#ffc803"} />
+            <FaCrown size={25} color={"#ffdd61"} />
           </ContactTitle>
           <ContactText>
             <p>

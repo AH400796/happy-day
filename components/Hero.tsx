@@ -63,11 +63,11 @@ const Hero: React.FC = () => {
   return (
     <>
       <HeroTitle>
-        <FaCrown size={25} color={"#ffc803"} />
+        <FaCrown size={25} color={"#ffdd61"} />
         <HeroTitleText>
           Замовте індивідуальну або групову дитячу фотосесію
         </HeroTitleText>
-        <FaCrown size={25} color={"#ffc803"} />
+        <FaCrown size={25} color={"#ffdd61"} />
       </HeroTitle>
       <HeroVideoWrapper>
         <HeroVideo
@@ -82,18 +82,18 @@ const Hero: React.FC = () => {
         <HeroOverlay>
           {!isPlaying && (
             <StyledButton onClick={handlePlay}>
-              <FaPlay size={15} color={"#FFC803"} />
+              <FaPlay size={15} color={"#ffdd61"} />
             </StyledButton>
           )}
           {isPlaying && (
             <StyledButton onClick={handlePause}>
-              <FaPause size={15} color={"#FFC803"} />
+              <FaPause size={15} color={"#ffdd61"} />
             </StyledButton>
           )}
           <VolumeButton>
             <StyledVolumeButton onClick={handleVolume}>
-              {volume !== 0 && <IoVolumeHigh size={25} color={"#FFC803"} />}
-              {volume === 0 && <IoVolumeMute size={25} color={"#FFC803"} />}
+              {volume !== 0 && <IoVolumeHigh size={25} color={"#ffdd61"} />}
+              {volume === 0 && <IoVolumeMute size={25} color={"#ffdd61"} />}
             </StyledVolumeButton>
             <VolumeInput
               type="range"

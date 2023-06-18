@@ -26,9 +26,9 @@ const Prices: React.FC = () => {
       <Container>
         <ContentWrapper>
           <PriceTitle>
-            <FaCrown size={25} color={"#ffc803"} />
+            <FaCrown size={25} color={"#ffdd61"} />
             <PriceTitleText>Розцінки на фотосесію</PriceTitleText>
-            <FaCrown size={25} color={"#ffc803"} />
+            <FaCrown size={25} color={"#ffdd61"} />
           </PriceTitle>
           <PriceText>
             <p>
@@ -67,11 +67,11 @@ const Prices: React.FC = () => {
             </p>
           </PriceText>
           <ConditionsTitle>
-            <FaCrown size={25} color={"#ffc803"} />
+            <FaCrown size={25} color={"#ffdd61"} />
             <ConditionsTitleText>
               Правила та умови бронювання фотосесій
             </ConditionsTitleText>
-            <FaCrown size={25} color={"#ffc803"} />
+            <FaCrown size={25} color={"#ffdd61"} />
           </ConditionsTitle>
           <ConditionsText>
             <p>

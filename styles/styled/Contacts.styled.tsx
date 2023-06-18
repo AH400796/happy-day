@@ -19,32 +19,36 @@ export const SocialContacts = styled.div`
 export const ContactText = styled.a`
   text-decoration: none;
   padding-top: 2px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   padding: 0 5px;
 
-  color: #ffc803;
+  color: #ffdd61;
   border-radius: 10px;
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   &:hover,
   &:focus {
-    background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
-    color: #f15232;
+    background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
+    color: #f78629;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
   }
 `;
 
 export const StyledLink = styled.a`
   display: flex;
   align-items: center;
-  color: #f15232;
+  color: #f78629;
 
   &:hover,
   &:focus {
-    color: #ffc803;
+    color: #ffdd61;
   }
 `;
 
@@ -57,10 +61,10 @@ export const IconWrapper = styled.div`
   padding: 5px;
 
   border-radius: 50%;
-  background: linear-gradient(180deg, #ffc803 0%, #f8ed52 100%);
+  background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
 
   &:hover,
   &:focus {
-    background: #f15232;
+    background: #f78629;
   }
 `;

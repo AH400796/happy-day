@@ -72,7 +72,7 @@ export const FeedbackBtn = styled.button`
 
   &:hover,
   &:focus {
-    color: #27b1dd;
+    color: #f78629;
   }
 
   &:disabled {

@@ -8,7 +8,7 @@ export const StyledHeader = styled.header`
   font-size: 30px;
 
   background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
-  color: #ffc803;
+  color: #ffdd61;
 
   @media screen and (min-width: 768px) {
     height: 180px;
@@ -44,8 +44,8 @@ export const ContactsWrapper = styled.div`
   gap: 10px;
 
   font-size: 16px;
-  border: 2px solid #ffc803;
-  color: #ffc803;
+  border: 2px solid #ffdd61;
+  color: #ffdd61;
   border-radius: 15px;
   padding: 20px 20px 20px 20px;
 `;

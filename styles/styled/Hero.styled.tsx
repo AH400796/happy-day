@@ -61,8 +61,8 @@ export const VolumeInput = styled.input<any>`
       const value = Number(props.value);
       return `linear-gradient(
       to right,
-      #ffc803 0%,
-      #ffc803 ${value * 100}%,
+      #ffdd61 0%,
+      #ffdd61 ${value * 100}%,
       #b0e7a8 ${value * 100}%,
       #b0e7a8 100%
     )`;
@@ -75,7 +75,7 @@ export const VolumeInput = styled.input<any>`
     height: 20px;
     width: 3px;
     border-radius: 3px;
-    background: #ffc803;
+    background: #ffdd61;
     transform: translate(0, -40%);
     cursor: pointer;
   }
@@ -87,8 +87,8 @@ export const VolumeInput = styled.input<any>`
       const value = Number(props.value);
       return `linear-gradient(
       to right,
-      #ffc803 0%,
-      #ffc803 ${value * 100}%,
+      #ffdd61 0%,
+      #ffdd61 ${value * 100}%,
       #27b1dd ${value * 100}%,
       #27b1dd 100%
     )`;
@@ -100,7 +100,7 @@ export const VolumeInput = styled.input<any>`
     height: 20px;
     width: 3px;
     border-radius: 3px;
-    background: #ffc803;
+    background: #ffdd61;
     cursor: pointer;
   }
 
@@ -111,8 +111,8 @@ export const VolumeInput = styled.input<any>`
       const value = Number(props.value);
       return `linear-gradient(
       to right,
-      #ffc803 0%,
-      #ffc803 ${value * 100}%,
+      #ffdd61 0%,
+      #ffdd61 ${value * 100}%,
       #27b1dd ${value * 100}%,
       #27b1dd 100%
     )`;
@@ -125,7 +125,7 @@ export const VolumeInput = styled.input<any>`
     height: 20px;
     width: 3px;
     border-radius: 3px;
-    background: #ffc803;
+    background: #ffdd61;
     cursor: pointer;
   }
 `;
@@ -146,7 +146,7 @@ export const StyledButton = styled.button`
   padding: 0 8px;
   background-color: #1a191950;
   border-radius: 50%;
-  border: 1px solid #ffc803;
+  border: 1px solid #ffdd61;
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
@@ -175,7 +175,7 @@ export const StyledVolumeButton = styled.button`
   padding: 5px;
   background-color: #1a191950;
   border-radius: 50%;
-  border: 1px solid #ffc803;
+  border: 1px solid #ffdd61;
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
@@ -205,7 +205,7 @@ export const HeroTitle = styled.h1`
 
   border-radius: 10px 10px 0 0;
   background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
-  color: #ffc803;
+  color: #ffdd61;
 
   @media screen and (min-width: 768px) {
     padding: 10px 10px 15px 10px;
