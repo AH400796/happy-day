@@ -63,11 +63,11 @@ const Hero: React.FC = () => {
   return (
     <>
       <HeroTitle>
-        <FaCrown size={25} color={"#ffdd61"} />
+        <FaCrown size={25} color={"#f78629"} />
         <HeroTitleText>
-          Замовте індивідуальну або групову дитячу фотосесію
+          ЗАМОВТЕ ІНДИВІДУАЛЬНУ АБО ГРУПОВУ ФОТОСЕСІЮ
         </HeroTitleText>
-        <FaCrown size={25} color={"#ffdd61"} />
+        <FaCrown size={25} color={"#f78629"} />
       </HeroTitle>
       <HeroVideoWrapper>
         <HeroVideo

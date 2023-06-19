@@ -12,9 +12,9 @@ const About: React.FC = () => {
   return (
     <>
       <AboutTitle>
-        <FaCrown size={25} color={"#ffdd61"} />
-        <AboutTitleText>Наша місія</AboutTitleText>
-        <FaCrown size={25} color={"#ffdd61"} />
+        <FaCrown size={25} color={"#f78629"} />
+        <AboutTitleText>НАША МІСІЯ</AboutTitleText>
+        <FaCrown size={25} color={"#f78629"} />
       </AboutTitle>
       <AboutText>
         <p>

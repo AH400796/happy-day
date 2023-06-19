@@ -10,9 +10,9 @@ const Collections: React.FC = () => {
   return (
     <CollectionsWrapper>
       <CollectionsTitle>
-        <FaCrown size={25} color={"#ffdd61"} />
-        <CollectionsTitleText>Перегляньте наші колекції</CollectionsTitleText>
-        <FaCrown size={25} color={"#ffdd61"} />
+        <FaCrown size={25} color={"#f78629"} />
+        <CollectionsTitleText>ПЕРЕГЛЯНЬТЕ НАШІ КОЛЕКЦІЇ</CollectionsTitleText>
+        <FaCrown size={25} color={"#f78629"} />
       </CollectionsTitle>
       <CollectionsText>
         <p>

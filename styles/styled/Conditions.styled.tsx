@@ -8,17 +8,17 @@ export const ConditionsTitle = styled.h2`
   align-items: center;
   width: 100%;
   text-align: center;
-  padding: 5px 5px 10px 5px;
+  padding: 5px;
 
   border-radius: 10px 10px 0 0;
-  background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
-  color: #ffdd61;
+  border-bottom: 1px solid #93b674;
+  color: #f78629;
 
   @media screen and (min-width: 768px) {
-    padding: 5px 10px 10px 10px;
+    padding: 5px 10px;
   }
   @media screen and (min-width: 1280px) {
-    padding: 10px 15px 15px 15px;
+    padding: 5px 15px;
   }
 `;
 
@@ -39,6 +39,7 @@ export const ConditionsTitleText = styled.p`
 `;
 
 export const ConditionsText = styled.div`
+  width: 100%;
   padding: 20px 10px;
   margin-bottom: 10px;
   font-size: 14px;

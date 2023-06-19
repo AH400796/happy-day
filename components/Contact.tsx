@@ -9,9 +9,9 @@ const Contact: React.FC = () => {
   return (
     <>
       <ContactTitle>
-        <FaCrown size={25} color={"#ffdd61"} />
-        <ContactTitleText>{"Зв'яжіться з нами"}</ContactTitleText>
-        <FaCrown size={25} color={"#ffdd61"} />
+        <FaCrown size={25} color={"#f78629"} />
+        <ContactTitleText>{"ЗВ'ЯЖІТЬСЯ З НАМИ"}</ContactTitleText>
+        <FaCrown size={25} color={"#f78629"} />
       </ContactTitle>
       <ContactText>
         <p>

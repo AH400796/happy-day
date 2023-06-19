@@ -42,9 +42,9 @@ const Feedback: React.FC = () => {
   return (
     <>
       <FeedbackTitle>
-        <FaCrown size={25} color={"#ffdd61"} />
-        <FeedbackTitleText>Відгуки</FeedbackTitleText>
-        <FaCrown size={25} color={"#ffdd61"} />
+        <FaCrown size={25} color={"#f78629"} />
+        <FeedbackTitleText>ВІДГУКИ КЛІЄНТІВ</FeedbackTitleText>
+        <FaCrown size={25} color={"#f78629"} />
       </FeedbackTitle>
       <Suspense fallback={<Loader width="100" />}>
         <FeedbackText>
@@ -55,9 +55,9 @@ const Feedback: React.FC = () => {
             </AverageRating>
           )}
           <p>
-            Ознайомитесь з відгуками наших клієнтів щодо наших послуг або
-            залиште свій, скориставшись{" "}
-            <Anchor href={`#feedBack`}> формою відгуку</Anchor> внизу сторінки.
+            Ознайомтесь з відгуками наших клієнтів або залиште свій,
+            скориставшись <Anchor href={`#feedBack`}> формою відгуку</Anchor>{" "}
+            внизу сторінки.
           </p>
         </FeedbackText>
         <FeedbackList feedbacks={feedbacks} />

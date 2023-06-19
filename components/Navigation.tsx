@@ -20,9 +20,9 @@ const ActiveStyledLink: React.FC<{ href: string; children: string }> = ({
 const Navigation: React.FC = () => {
   return (
     <StyledNav>
-      <ActiveStyledLink href="/">Головна</ActiveStyledLink>
-      <ActiveStyledLink href="/collections">Колекції</ActiveStyledLink>
-      <ActiveStyledLink href="/prices">Ціни та умови</ActiveStyledLink>
+      <ActiveStyledLink href="/">ГОЛОВНА</ActiveStyledLink>
+      <ActiveStyledLink href="/collections">КОЛЕКЦІЇ</ActiveStyledLink>
+      <ActiveStyledLink href="/prices">ПРО НАС</ActiveStyledLink>
     </StyledNav>
   );
 };

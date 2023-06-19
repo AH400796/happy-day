@@ -9,9 +9,9 @@ const Price: React.FC = () => {
   return (
     <>
       <PriceTitle>
-        <FaCrown size={25} color={"#ffdd61"} />
-        <PriceTitleText>Тарифні плани</PriceTitleText>
-        <FaCrown size={25} color={"#ffdd61"} />
+        <FaCrown size={25} color={"#f78629"} />
+        <PriceTitleText>ДОCТУПНІ ТАРИФНІ ПЛАНИ</PriceTitleText>
+        <FaCrown size={25} color={"#f78629"} />
       </PriceTitle>
       <PriceText>
         <p>

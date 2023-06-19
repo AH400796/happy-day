@@ -13,11 +13,11 @@ const SliderOnMain: React.FC = () => {
   return (
     <Wrapper>
       <SliderTitle>
-        <FaCrown size={25} color={"#ffdd61"} />
+        <FaCrown size={25} color={"#f78629"} />
         <SliderTitleText>
-          Ефектні фото, що не залишать без емоцій нікого
+          ЕФЕКТНІ ФОТО, ЩО НЕ ЗАЛИШАТЬСЯ БЕЗ ЕМОЦІЙ
         </SliderTitleText>
-        <FaCrown size={25} color={"#ffdd61"} />
+        <FaCrown size={25} color={"#f78629"} />
       </SliderTitle>
       <SwipperSlider collection={collection} />
     </Wrapper>

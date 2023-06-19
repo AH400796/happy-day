@@ -26,6 +26,8 @@ export const ActiveLink = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
 `;
 
 export const PrevBtn = styled.button`
