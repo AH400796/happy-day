@@ -5,8 +5,8 @@ import Price from "@components/Price";
 import Container from "@components/Container";
 import Section from "@components/Section";
 import Hero from "@components/Hero";
+import SliderOnMain from "@components/SliderOnMain";
 import Feedback from "@components/Feedback";
-
 import Contact from "@components/Contact";
 
 import { ContentWrapper } from "@styles/styled/Pages.styled";
@@ -22,6 +22,7 @@ const Home = async () => {
         <ToastContainer />
         <ContentWrapper>
           <Hero />
+          <SliderOnMain />
           <Price />
           <Feedback />
           <Contact />

@@ -11,10 +11,20 @@ interface IStyledLinkProps {
 }
 
 export const StyledLink = styled(Link)<IStyledLinkProps>`
-  min-width: 150px;
-  width: 150px;
+  min-width: 200px;
+  width: 200px;
   text-decoration: none;
   color: ${(props) => (props[`data-active`] ? "#4e6739" : "#ffdd61")};
+
+  @media screen and (min-width: 768px) {
+    min-width: 180px;
+    width: 180px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 200px;
+    width: 200px;
+  }
 `;
 
 export const WrapperStyled = styled.div<IStyledProps>`
@@ -24,12 +34,12 @@ export const WrapperStyled = styled.div<IStyledProps>`
   width: 100%;
   height: 50px;
   padding: 0 20px;
-  border-radius: 20px;
+  border-radius: 15px;
 
   background: ${(props) =>
     props[`data-active`]
       ? "linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%)"
-      : "linear-gradient(180deg, #4e6739 0%, #93b674 100%)"};
+      : "linear-gradient(180deg, #6d9150 0%, #b4cf9d 100%)"};
 
   font-size: 16px;
   font-weight: 700;

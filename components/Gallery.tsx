@@ -3,6 +3,7 @@ import { useState, useEffect, useContext } from "react";
 import { usePathname } from "next/navigation";
 import { CldImage } from "next-cloudinary";
 import { SizeContext } from "@app/size";
+import Modal from "@components/Modal";
 import Slider from "@components/Slider";
 
 import {
@@ -54,6 +55,7 @@ const GalleryItem: React.FC<IItemProps> = ({ url, onClick }) => {
 const Gallery: React.FC<IProps> = ({ collections }) => {
   const [showSlider, setShowSlider] = useState<boolean>(false);
   const [startIndex, setStartIndex] = useState<number>(0);
+  const [width] = useContext<number[]>(SizeContext);
   const pathname: string = usePathname();
 
   useEffect(() => {
@@ -89,11 +91,13 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
         })}
       </GalleryList>
       {showSlider && (
-        <Slider
-          collection={collection}
-          onClose={handleOnClose}
-          startIndex={startIndex}
-        />
+        <Modal onClose={handleOnClose}>
+          <Slider
+            collection={collection.urls}
+            startIndex={startIndex}
+            width={width}
+          />
+        </Modal>
       )}
     </Wrapper>
   );

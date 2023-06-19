@@ -2,12 +2,6 @@
 
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden; */
-`;
 export const Overlay = styled.div`
   position: fixed;
   top: 0;
@@ -28,21 +22,21 @@ export const ModalWindow = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
   overflow: hidden;
 `;
 
-export const SliderCloseButton = styled.button`
+export const ModalCloseBtn = styled.button`
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 20px;
-  top: 20px;
-  padding: 0;
+  right: 0;
+  top: 0;
+  padding: 5px;
   border: none;
   outline: none;
   background-color: transparent;
-  color: #ffc107;
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px #6e6e6e);
 `;

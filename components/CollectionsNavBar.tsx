@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { SizeContext } from "@app/size";
 import LinkBtn from "./LinkBtn";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import {
@@ -23,6 +24,7 @@ interface IProps {
 
 const CollectionsNavBar: React.FC<IProps> = ({ collections }) => {
   const [activeIdx, setActiveIdx] = useState<number>(0);
+  const [width] = useContext<number[]>(SizeContext);
 
   const handleIncrease = (): void => {
     if (activeIdx + 1 <= collections.length - 1) {
@@ -68,16 +70,20 @@ const CollectionsNavBar: React.FC<IProps> = ({ collections }) => {
   return (
     <Wrapper>
       <CollectionsBtns>
-        <LinkBtn
-          name={collections[firstLinkIdx].name}
-          activeName={collections[activeIdx].name}
-          onClick={handleOnClick}
-        />
-        <LinkBtn
-          name={collections[secondLinkIdx].name}
-          activeName={collections[activeIdx].name}
-          onClick={handleOnClick}
-        />
+        {width > 1279 && (
+          <LinkBtn
+            name={collections[firstLinkIdx].name}
+            activeName={collections[activeIdx].name}
+            onClick={handleOnClick}
+          />
+        )}
+        {width > 767 && (
+          <LinkBtn
+            name={collections[secondLinkIdx].name}
+            activeName={collections[activeIdx].name}
+            onClick={handleOnClick}
+          />
+        )}
         <ActiveLink>
           <LinkBtn
             name={collections[activeIdx].name}
@@ -85,16 +91,20 @@ const CollectionsNavBar: React.FC<IProps> = ({ collections }) => {
             onClick={handleOnClick}
           />
         </ActiveLink>
-        <LinkBtn
-          name={collections[fourthLinkIdx].name}
-          activeName={collections[activeIdx].name}
-          onClick={handleOnClick}
-        />
-        <LinkBtn
-          name={collections[fifthLinkIdx].name}
-          activeName={collections[activeIdx].name}
-          onClick={handleOnClick}
-        />
+        {width > 767 && (
+          <LinkBtn
+            name={collections[fourthLinkIdx].name}
+            activeName={collections[activeIdx].name}
+            onClick={handleOnClick}
+          />
+        )}
+        {width > 1279 && (
+          <LinkBtn
+            name={collections[fifthLinkIdx].name}
+            activeName={collections[activeIdx].name}
+            onClick={handleOnClick}
+          />
+        )}
       </CollectionsBtns>
 
       <PrevBtn type="button" onClick={handleDecrease}>
