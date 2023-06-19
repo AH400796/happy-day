@@ -4,16 +4,20 @@
     "name": "Tiffany",
     "urls": [
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg"
       }
     ]
   },
@@ -23,16 +27,20 @@
     "name": "Ukrainian style",
     "urls": [
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg"
       }
     ]
   },
@@ -41,16 +49,20 @@
     "name": "Girls party Girls party",
     "urls": [
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg"
       }
     ]
   },
@@ -59,16 +71,20 @@
     "name": "Barbi style",
     "urls": [
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg"
       }
     ]
   },
@@ -77,16 +93,20 @@
     "name": "Any style",
     "urls": [
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg"
+        "original": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg",
+        "thumbnail": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg"
       }
     ]
   }

@@ -1,12 +1,22 @@
 [
-  { "url": "images/tiff.jpeg" },
-  { "url": "images/tiff.jpeg" },
-  { "url": "images/tiff.jpeg" },
-  { "url": "images/tiff.jpeg" },
-  { "url": "images/tiff.jpeg" },
-  { "url": "images/tiff.jpeg" },
-  { "url": "images/tiff.jpeg" },
-  { "url": "images/tiff.jpeg" },
-  { "url": "images/tiff.jpeg" },
-  { "url": "images/tiff.jpeg" }
+  {
+    "original": "images/tiff.jpeg",
+    "thumbnail": "images/tiff.jpeg"
+  },
+  {
+    "original": "images/tiff.jpeg",
+    "thumbnail": "images/tiff.jpeg"
+  },
+  {
+    "original": "images/tiff.jpeg",
+    "thumbnail": "images/tiff.jpeg"
+  },
+  {
+    "original": "images/tiff.jpeg",
+    "thumbnail": "images/tiff.jpeg"
+  },
+  {
+    "original": "images/tiff.jpeg",
+    "thumbnail": "images/tiff.jpeg"
+  }
 ]

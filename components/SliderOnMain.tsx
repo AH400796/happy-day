@@ -1,9 +1,7 @@
 "use client";
 
-import { useContext } from "react";
-import { SizeContext } from "@app/size";
 import { FaCrown } from "react-icons/fa";
-import Slider from "@components/Slider";
+import SwipperSlider from "@components/SwipperSlider";
 import collection from "@data/main_collections.json";
 import {
   Wrapper,
@@ -12,11 +10,6 @@ import {
 } from "@styles/styled/SliderOnMain.styled";
 
 const SliderOnMain: React.FC = () => {
-  const [width] = useContext<number[]>(SizeContext);
-  console.log(width);
-
-  const imageWidth: number =
-    width < 480 ? width + 60 : width < 768 ? 530 : width < 1280 ? 808 : 1310;
   return (
     <Wrapper>
       <SliderTitle>
@@ -26,14 +19,7 @@ const SliderOnMain: React.FC = () => {
         </SliderTitleText>
         <FaCrown size={25} color={"#ffdd61"} />
       </SliderTitle>
-      <Slider
-        width={imageWidth}
-        collection={collection}
-        startIndex={0}
-        autoPlay={true}
-        autoPlayDelay={3.0}
-        slideDuration={2.0}
-      />
+      <SwipperSlider collection={collection} />
     </Wrapper>
   );
 };

@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { CldImage } from "next-cloudinary";
 import { SizeContext } from "@app/size";
 import Modal from "@components/Modal";
-import Slider from "@components/Slider";
+import SwipperSlider from "@components/SwipperSlider";
 
 import {
   Wrapper,
@@ -21,7 +21,7 @@ interface IItemProps {
 interface ICollection {
   id: number;
   name: string;
-  urls: { url: string }[];
+  urls: { original: string; thumbnail: string }[];
 }
 
 interface IProps {
@@ -55,7 +55,7 @@ const GalleryItem: React.FC<IItemProps> = ({ url, onClick }) => {
 const Gallery: React.FC<IProps> = ({ collections }) => {
   const [showSlider, setShowSlider] = useState<boolean>(false);
   const [startIndex, setStartIndex] = useState<number>(0);
-  const [width] = useContext<number[]>(SizeContext);
+
   const pathname: string = usePathname();
 
   useEffect(() => {
@@ -72,7 +72,9 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
   )[0];
   const handleOnClick = (url: string): void => {
     setShowSlider(true);
-    const index: number = collection.urls.findIndex((el) => el.url === url);
+    const index: number = collection.urls.findIndex(
+      (el) => el.original === url
+    );
     setStartIndex(index);
   };
 
@@ -86,16 +88,20 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
       <GalleryList>
         {collection.urls.map((el) => {
           return (
-            <GalleryItem key={el.url} url={el.url} onClick={handleOnClick} />
+            <GalleryItem
+              key={el.original}
+              url={el.original}
+              onClick={handleOnClick}
+            />
           );
         })}
       </GalleryList>
       {showSlider && (
         <Modal onClose={handleOnClose}>
-          <Slider
+          <SwipperSlider
             collection={collection.urls}
+            showThumbnails={false}
             startIndex={startIndex}
-            width={width}
           />
         </Modal>
       )}
