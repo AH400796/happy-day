@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 const CollectionsPage: React.FC = () => {
-  return <Collections />;
+  return <></>;
 };
 
 export default CollectionsPage;

@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 `;
 
 export const GalleryList = styled.ul`
@@ -38,18 +39,11 @@ export const ItemWrapper = styled.div`
 `;
 
 export const GalleryTitle = styled.h1`
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
-
   margin-bottom: 20px;
-  color: #4e6739;
 
-  @media screen and (max-width: 767px) {
-    display: block;
-    width: 250px;
-    margin-bottom: 10px;
-    padding-left: 50px;
-  }
+  color: #4e6739;
 
   @media screen and (min-width: 768px) {
     font-size: 24px;

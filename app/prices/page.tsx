@@ -8,7 +8,8 @@ export const metadata: Metadata = {
 
 import Container from "@components/Container";
 import Section from "@components/Section";
-import Price from "@components/Price";
+import About from "@components/About";
+
 import Conditions from "@components/Conditions";
 
 import { ContentWrapper } from "@styles/styled/Pages.styled";
@@ -18,7 +19,7 @@ const Prices: React.FC = () => {
     <Section>
       <Container>
         <ContentWrapper>
-          <Price />
+          <About />
           <Conditions />
         </ContentWrapper>
       </Container>

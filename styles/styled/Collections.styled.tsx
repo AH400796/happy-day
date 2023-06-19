@@ -2,26 +2,16 @@
 
 import styled from "styled-components";
 
-export const ContentWrapper = styled.div`
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-`;
-
 export const CollectionsWrapper = styled.div`
-  padding-left: 60px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-
-  @media screen and (min-width: 1280px) {
-    padding-left: 0;
-  }
 `;
 
 export const CollectionsTitle = styled.h2`
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,28 +48,26 @@ export const CollectionsTitleText = styled.p`
 `;
 
 export const CollectionsText = styled.div`
-  padding: 20px 10px;
+  width: 100%;
+  padding: 20px;
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
   text-indent: 20px;
-  column-count: 1;
-  column-rule: 1px dotted #4e6739;
+
   background: linear-gradient(180deg, #bbe29b 0%, #ffffff 100%);
   color: #4e6739;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 15px;
-    column-count: 2;
-    column-gap: 40px;
+
     font-size: 16px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 20px;
-    column-count: 3;
-    column-gap: 50px;
+
     font-size: 20px;
   }
 `;

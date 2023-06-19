@@ -1,12 +1,12 @@
 import { Metadata } from "next";
 
 import { ToastContainer } from "react-toastify";
-
+import Price from "@components/Price";
 import Container from "@components/Container";
 import Section from "@components/Section";
 import Hero from "@components/Hero";
 import Feedback from "@components/Feedback";
-import About from "@components/About";
+
 import Contact from "@components/Contact";
 
 import { ContentWrapper } from "@styles/styled/Pages.styled";
@@ -22,7 +22,7 @@ const Home = async () => {
         <ToastContainer />
         <ContentWrapper>
           <Hero />
-          <About />
+          <Price />
           <Feedback />
           <Contact />
         </ContentWrapper>

@@ -14,11 +14,11 @@ import {
 const FeedbackList: React.FC<any> = ({ feedbacks }) => {
   const [viewIndexes, setViewIndexes] = useState<number[]>([0, 2]);
 
-  const handleIncrease = () => {
+  const handleIncrease = (): void => {
     setViewIndexes((prevState) => [prevState[0] + 3, prevState[1] + 3]);
   };
 
-  const handleDecrease = () => {
+  const handleDecrease = (): void => {
     setViewIndexes((prevState) => [prevState[0] - 3, prevState[1] - 3]);
   };
 

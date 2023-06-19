@@ -10,7 +10,7 @@ const Price: React.FC = () => {
     <>
       <PriceTitle>
         <FaCrown size={25} color={"#ffdd61"} />
-        <PriceTitleText>Розцінки на фотосесію</PriceTitleText>
+        <PriceTitleText>Тарифні плани</PriceTitleText>
         <FaCrown size={25} color={"#ffdd61"} />
       </PriceTitle>
       <PriceText>

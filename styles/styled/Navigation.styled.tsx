@@ -27,7 +27,7 @@ export const StyledNav = styled.nav`
 export const StyledLink = styled(Link)<IStyledLinkProps>`
   font-size: 24px;
   font-weight: 700;
-  border-radius: 50px 0 50px 0;
+  border-radius: 20px;
   padding: 0 20px;
 
   color: ${(props) => (props[`data-active`] ? "#f78629" : "#4e6739")};

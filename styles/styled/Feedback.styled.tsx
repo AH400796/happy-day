@@ -43,7 +43,7 @@ export const FeedbackTitleText = styled.p`
 `;
 
 export const FeedbackText = styled.div`
-  padding: 20px 10px 0;
+  padding: 20px;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;

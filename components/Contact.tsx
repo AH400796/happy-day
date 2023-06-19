@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
     <>
       <ContactTitle>
         <FaCrown size={25} color={"#ffdd61"} />
-        <ContactTitleText>{"Зв'язок з нами"}</ContactTitleText>
+        <ContactTitleText>{"Зв'яжіться з нами"}</ContactTitleText>
         <FaCrown size={25} color={"#ffdd61"} />
       </ContactTitle>
       <ContactText>

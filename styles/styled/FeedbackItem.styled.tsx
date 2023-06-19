@@ -55,7 +55,7 @@ export const StyledRating = styled.span`
 
 export const StyledFeedback = styled.p`
   width: 100%;
-  padding: 5px 10px;
+  padding: 10px;
   font-size: 14px;
   font-weight: 500;
   font-style: italic;

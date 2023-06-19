@@ -71,5 +71,23 @@
         "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg"
       }
     ]
+  },
+  {
+    "id": 5,
+    "name": "Any style",
+    "urls": [
+      {
+        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396120/samples/sheep.jpg"
+      },
+      {
+        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/food/fish-vegetables.jpg"
+      },
+      {
+        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396119/samples/animals/reindeer.jpg"
+      },
+      {
+        "url": "https://res.cloudinary.com/denty5y1o/image/upload/v1686396117/samples/animals/cat.jpg"
+      }
+    ]
   }
 ]

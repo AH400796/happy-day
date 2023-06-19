@@ -39,7 +39,7 @@ export const PriceTitleText = styled.p`
 `;
 
 export const PriceText = styled.div`
-  padding: 20px 10px;
+  padding: 20px;
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 400;
