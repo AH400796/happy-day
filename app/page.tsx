@@ -17,18 +17,32 @@ export const metadata: Metadata = {
 
 const Home = async () => {
   return (
-    <Section>
-      <Container>
-        <ToastContainer />
-        <ContentWrapper>
-          <Hero />
-          <SliderOnMain />
+    <>
+      <Section>
+        <Container>
+          <ContentWrapper>
+            <Hero />
+            <SliderOnMain />
+          </ContentWrapper>
+        </Container>
+      </Section>
+      <Section>
+        <Container>
           <Price />
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
           <Feedback />
+        </Container>
+      </Section>
+      <Section>
+        <Container>
           <Contact />
-        </ContentWrapper>
-      </Container>
-    </Section>
+        </Container>
+      </Section>
+    </>
   );
 };
 

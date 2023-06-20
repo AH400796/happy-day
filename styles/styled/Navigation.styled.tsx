@@ -29,6 +29,7 @@ export const StyledLink = styled(Link)<IStyledLinkProps>`
   font-weight: 700;
   border-radius: 20px;
   padding: 0 20px;
+  border: 1px solid transparent;
 
   color: ${(props) => (props[`data-active`] ? "#f78629" : "#4e6739")};
 
@@ -39,7 +40,11 @@ export const StyledLink = styled(Link)<IStyledLinkProps>`
       props[`data-active`]
         ? "linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%)"
         : "transparent"};
-    color: ${(props) => (props[`data-active`] ? "#f78629" : "#ffdd61")};
+    border: ${(props) =>
+      props[`data-active`]
+        ? "1px solid #f78629"
+        : "border: 1px solid transparent;"};
+    color: ${(props) => (props[`data-active`] ? "#f78629" : "#4e6739")};
   }
 
   @media screen and (min-width: 1280px) {
@@ -50,6 +55,7 @@ export const StyledLink = styled(Link)<IStyledLinkProps>`
   &:hover,
   &:focus {
     color: #f78629;
+    border: 1px solid #f78629;
     background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
   }
 `;

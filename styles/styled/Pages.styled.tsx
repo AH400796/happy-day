@@ -8,4 +8,3 @@ export const ContentWrapper = styled.div`
   align-items: center;
   overflow: hidden;
 `;
-

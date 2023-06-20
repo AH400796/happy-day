@@ -22,7 +22,7 @@ export const FeedbackTitle = styled.h2`
   }
 `;
 
-export const FeedbackTitleText = styled.p`
+export const FeedbackTitleText = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;

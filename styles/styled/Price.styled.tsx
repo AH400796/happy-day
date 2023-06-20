@@ -22,7 +22,7 @@ export const PriceTitle = styled.h2`
   }
 `;
 
-export const PriceTitleText = styled.p`
+export const PriceTitleText = styled.span`
   width: 100%;
   text-align: center;
   font-size: 16px;

@@ -22,7 +22,7 @@ export const AboutTitle = styled.h2`
   }
 `;
 
-export const AboutTitleText = styled.p`
+export const AboutTitleText = styled.span`
   width: 100%;
   text-align: center;
   font-size: 16px;

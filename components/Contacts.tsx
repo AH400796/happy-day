@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaTelegramPlane, FaFacebookF, FaInstagram } from "react-icons/fa";
 import {
+  ContactsWrapper,
   ContactWrapper,
   ContactText,
   SocialContacts,
@@ -10,7 +11,7 @@ import {
 
 const Contacts: React.FC = () => {
   return (
-    <>
+    <ContactsWrapper>
       <ContactWrapper>
         <Image
           src="/icons/icon_kyivstar.svg"
@@ -61,7 +62,7 @@ const Contacts: React.FC = () => {
           </IconWrapper>
         </StyledLink>
       </SocialContacts>
-    </>
+    </ContactsWrapper>
   );
 };
 

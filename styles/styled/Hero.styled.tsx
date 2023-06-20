@@ -195,7 +195,7 @@ export const StyledVolumeButton = styled.button`
   }
 `;
 
-export const HeroTitle = styled.h1`
+export const HeroTitle = styled.h2`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -215,7 +215,7 @@ export const HeroTitle = styled.h1`
   }
 `;
 
-export const HeroTitleText = styled.p`
+export const HeroTitleText = styled.span`
   width: 100%;
   max-width: 250px;
   text-align: center;
