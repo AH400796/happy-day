@@ -131,7 +131,7 @@ export const StyledRadioInput = styled.li<IStyledProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ${(props) => (props[`data-feedback`] ? "#ffdd61" : "#ffffff")};
+  color: ${(props) => (props[`data-feedback`] ? "#f78629" : "#ffffff")};
 `;
 
 export const RadioInput = styled(Field)`
