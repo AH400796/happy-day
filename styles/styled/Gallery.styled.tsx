@@ -38,7 +38,7 @@ export const ItemWrapper = styled.div`
   }
 `;
 
-export const GalleryTitle = styled.h1`
+export const GalleryTitle = styled.h2`
   font-size: 18px;
   text-align: center;
   margin-bottom: 20px;

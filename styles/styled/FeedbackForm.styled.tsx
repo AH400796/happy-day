@@ -47,7 +47,7 @@ export const StyledInputLabel = styled.label`
   font-size: 14px;
   font-weight: 500;
 
-  color: #ffdd61;
+  color: #4e6739;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -71,7 +71,7 @@ export const StyledRadioSection = styled.div`
   font-size: 14px;
   font-weight: 500;
 
-  color: #ffdd61;
+  color: #4e6739;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -131,7 +131,7 @@ export const StyledRadioInput = styled.li<IStyledProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ${(props) => (props[`data-feedback`] ? "#f78629" : "#ffffff")};
+  color: ${(props) => (props[`data-feedback`] ? "#f78629" : "#dbdbdb")};
 `;
 
 export const RadioInput = styled(Field)`
@@ -160,10 +160,12 @@ export const FeedbackBtn = styled.button`
   height: 35px;
   font-size: 14px;
   font-weight: 600;
-  border: 2px solid #ffdd61;
+
   border-radius: 10px;
-  background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
-  color: #5b6652;
+  background: #4e6739;
+  border: 1px solid transparent;
+
+  color: #ffdd61;
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
@@ -172,7 +174,8 @@ export const FeedbackBtn = styled.button`
 
   &:hover,
   &:focus {
-    background: #f78629;
-    color: #ffdd61;
+    background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
+    color: #f78629;
+    border: 1px solid #f78629;
   }
 `;

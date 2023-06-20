@@ -8,11 +8,7 @@ import Container from "./Container";
 import BurgerMenu from "./BurgerMenu";
 import Navigation from "./Navigation";
 import Contacts from "./Contacts";
-import {
-  StyledHeader,
-  HeaderWrapper,
-  ContactsWrapper,
-} from "@styles/styled/Header.styled";
+import { StyledHeader, HeaderWrapper } from "@styles/styled/Header.styled";
 
 const Header: React.FC = () => {
   const [width] = useContext<number[]>(SizeContext);
@@ -32,11 +28,7 @@ const Header: React.FC = () => {
           </Link>
           {width < 768 && <BurgerMenu />}
           {width >= 768 && <Navigation />}
-          {width >= 768 && (
-            <ContactsWrapper>
-              <Contacts />
-            </ContactsWrapper>
-          )}
+          {width >= 768 && <Contacts />}
         </HeaderWrapper>
       </Container>
     </StyledHeader>

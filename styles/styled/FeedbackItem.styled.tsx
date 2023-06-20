@@ -53,7 +53,7 @@ export const StyledRating = styled.span`
   padding: 0 15px;
 `;
 
-export const StyledFeedback = styled.p`
+export const StyledFeedback = styled.span`
   width: 100%;
   padding: 10px;
   font-size: 14px;

@@ -6,7 +6,8 @@ export const StyledFooter = styled.footer`
   flex-shrink: 0;
   text-align: center;
   padding: 30px 0 10px;
-  background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
+  border-top: 1px solid #93b674;
+  background: linear-gradient(180deg, #bbe29b 0%, #ffffff 100%);
 `;
 
 export const FooterWrapper = styled.div`
@@ -50,7 +51,7 @@ export const FooterContent = styled.div`
 export const FooterText = styled.span`
   font-size: 16px;
   font-weight: 700;
-  color: #ffdd61;
+  color: #4e6739;
 `;
 
 export const Wrapper = styled.div`

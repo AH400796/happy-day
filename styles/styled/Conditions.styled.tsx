@@ -22,7 +22,7 @@ export const ConditionsTitle = styled.h2`
   }
 `;
 
-export const ConditionsTitleText = styled.p`
+export const ConditionsTitleText = styled.span`
   width: 100%;
   text-align: center;
   font-size: 16px;

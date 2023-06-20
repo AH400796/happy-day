@@ -31,7 +31,7 @@ export const CollectionsTitle = styled.h2`
   }
 `;
 
-export const CollectionsTitleText = styled.p`
+export const CollectionsTitleText = styled.span`
   width: 100%;
   text-align: center;
   font-size: 16px;

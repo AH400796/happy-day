@@ -22,7 +22,7 @@ export const ContactTitle = styled.h2`
   }
 `;
 
-export const ContactTitleText = styled.p`
+export const ContactTitleText = styled.span`
   width: 100%;
   text-align: center;
   font-size: 16px;

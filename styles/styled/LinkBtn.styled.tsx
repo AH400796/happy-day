@@ -35,7 +35,8 @@ export const WrapperStyled = styled.div<IStyledProps>`
   font-size: 16px;
   font-weight: 700;
   color: ${(props) => (props[`data-active`] ? "#f78629" : "#6d9150")};
-  border: ${(props) => (props[`data-active`] ? "none" : "1px solid #cccac87b")};
+  border: ${(props) =>
+    props[`data-active`] ? "1px solid #f78629;" : "1px solid #cccac87b"};
 
   &:hover,
   &:focus {

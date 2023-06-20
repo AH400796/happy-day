@@ -3,7 +3,7 @@
 import Loader from "@components/Loader";
 
 const Loading: React.FC = () => {
-  return <Loader width={"150"} />;
+  return <Loader width={"100"} />;
 };
 
 export default Loading;

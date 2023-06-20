@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Wrapper } from "@styles/styled/Error.styled";
+import { Wrapper } from "@styles/styled/404.styled";
 
 const ErrorPage: React.FC = () => {
   return (

@@ -22,7 +22,7 @@ export const SliderTitle = styled.h2`
   }
 `;
 
-export const SliderTitleText = styled.p`
+export const SliderTitleText = styled.span`
   width: 100%;
   text-align: center;
   font-size: 16px;
@@ -38,15 +38,7 @@ export const SliderTitleText = styled.p`
   }
 `;
 
-export const Wrapper = styled.div`
+export const SliderWrapper = styled.div`
   width: 100%;
-  margin-bottom: 10px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 15px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 20px;
-  }
+  inline-size: 100%;
 `;
