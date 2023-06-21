@@ -130,7 +130,7 @@ export const Text = styled.div`
 export const FirstColTitle = styled.span`
   display: block;
   width: 80%;
-  padding: 25px;
+  padding: 25px 15px;
   line-height: normal;
   border-right: 1px solid #4e6739;
 `;

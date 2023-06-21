@@ -27,8 +27,8 @@ const Price: React.FC = () => {
         <FaCrown size={25} color={"#f78629"} />
       </PriceTitle>
       <PriceText>
-        Ознайомтесь з доступними тарифними пакетами та оберіть той, який Вам
-        ідеально підійде.{" "}
+        Ознайомтесь з доступними тарифними пакетами і послугами, що в них
+        входять, та оберіть той, який Вам ідеально підійде!{" "}
       </PriceText>
       <PricePackageWrapper>
         {/* GROUP VIP*/}
@@ -37,18 +37,19 @@ const Price: React.FC = () => {
             <Title>
               <FirstColTitle>Пакет "GROUP VIP"</FirstColTitle>
               <SecondCol>
-                <Promo>
+                {/* <Promo>
                   Акція!
                   <br /> 8 500
                 </Promo>
-                <OldPrice>9 500</OldPrice>
+                <OldPrice>9 500</OldPrice> */}
+                8 500
               </SecondCol>
             </Title>
             <Text>
               <FirstCol>
                 Групова професійна фотозйомка для дівчинки та її подружок в двох
                 образах: основна колекція та "Домашній стиль" (до 5-ти подружок,
-                від 90хв)
+                90хв)
               </FirstCol>
               <SecondCol>
                 <BsCheck size={25} color={"#1db937"} />
@@ -124,7 +125,7 @@ const Price: React.FC = () => {
             <Text>
               <FirstCol>
                 Групова професійна фотозйомка для дівчинки та її подружок (до
-                5-ти подружок, від 60хв)
+                5-ти подружок, 60хв)
               </FirstCol>
               <SecondCol>
                 <BsCheck size={25} color={"#1db937"} />
@@ -196,17 +197,18 @@ const Price: React.FC = () => {
             <Title>
               <FirstColTitle>Пакет "VIP" </FirstColTitle>
               <SecondCol>
-                <Promo>
+                {/* <Promo>
                   Акція!
                   <br /> 3 550
                 </Promo>
-                <OldPrice>4 000</OldPrice>
+                <OldPrice>4 000</OldPrice> */}
+                3 550
               </SecondCol>
             </Title>
             <Text>
               <FirstCol>
                 Індивідуальна професійна фотозйомка в двох образах: основна
-                колекція та "Домашній стиль" (від 60хв)
+                колекція та "Домашній стиль" (60хв)
               </FirstCol>
               <SecondCol>
                 <BsCheck size={25} color={"#1db937"} />
@@ -273,9 +275,7 @@ const Price: React.FC = () => {
               <SecondCol>2 500</SecondCol>
             </Title>
             <Text>
-              <FirstCol>
-                Індивідуальна професійна фотозйомка (від 30хв)
-              </FirstCol>
+              <FirstCol>Індивідуальна професійна фотозйомка (30хв)</FirstCol>
               <SecondCol>
                 <BsCheck size={25} color={"#1db937"} />
               </SecondCol>
@@ -340,9 +340,7 @@ const Price: React.FC = () => {
               <SecondCol>1 500</SecondCol>
             </Title>
             <Text>
-              <FirstCol>
-                Індивідуальна професійна фотозйомка (від 30хв)
-              </FirstCol>
+              <FirstCol>Індивідуальна професійна фотозйомка (30хв)</FirstCol>
               <SecondCol>
                 <BsCheck size={25} color={"#1db937"} />
               </SecondCol>
