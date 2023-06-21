@@ -38,29 +38,107 @@ export const PriceTitleText = styled.span`
   }
 `;
 
-export const PriceText = styled.div`
+export const PriceText = styled.p`
   padding: 20px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   text-indent: 20px;
-  column-count: 1;
-  column-rule: 1px dotted #4e6739;
   background: linear-gradient(180deg, #bbe29b 0%, #ffffff 100%);
   color: #4e6739;
 
   @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+  }
+`;
+
+export const PricePackageWrapper = styled.ul`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
     margin-bottom: 15px;
-    column-count: 2;
-    column-gap: 40px;
-    font-size: 16px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 20px;
-    column-count: 3;
-    column-gap: 50px;
+  }
+`;
+
+export const PricePackage = styled.li`
+  flex-basis: 100%;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+`;
+
+export const PackageWrapper = styled.div`
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+
+  border: 2px solid #4e6739;
+
+  background: linear-gradient(180deg, #bbe29b 0%, #ffffff 100%);
+  color: #4e6739;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
     font-size: 20px;
   }
+`;
+
+export const Title = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: 600;
+  border-bottom: 2px solid #4e6739;
+`;
+
+export const Text = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px dotted #4e6739;
+
+  &:nth-last-child(1) {
+    border-bottom: none;
+  }
+`;
+
+export const FirstCol = styled.span`
+  width: 80%;
+  padding: 15px;
+  line-height: normal;
+  border-right: 1px solid #4e6739;
+`;
+
+export const SecondCol = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  padding: 10px 0;
 `;

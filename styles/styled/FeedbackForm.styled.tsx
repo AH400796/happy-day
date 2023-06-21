@@ -34,6 +34,10 @@ export const StyledForm = styled(Form)`
   flex-direction: column;
   align-items: center;
   gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 320px;
+  }
 `;
 
 export const StyledInputLabel = styled.label`
@@ -44,13 +48,13 @@ export const StyledInputLabel = styled.label`
   align-items: flex-start;
   gap: 10px;
 
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 
   color: #4e6739;
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;
 
@@ -68,13 +72,13 @@ export const StyledRadioSection = styled.div`
   align-items: center;
   gap: 20px;
 
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 
   color: #4e6739;
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;
 

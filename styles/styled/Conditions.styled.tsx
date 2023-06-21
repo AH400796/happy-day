@@ -42,7 +42,7 @@ export const ConditionsText = styled.div`
   width: 100%;
   padding: 20px 10px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
 
@@ -56,7 +56,7 @@ export const ConditionsText = styled.div`
     margin-bottom: 15px;
     column-count: 2;
     column-gap: 40px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   @media screen and (min-width: 1280px) {

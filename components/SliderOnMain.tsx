@@ -20,7 +20,15 @@ const SliderOnMain: React.FC = () => {
         <FaCrown size={25} color={"#f78629"} />
       </SliderTitle>
       <>
-        <SwipperSlider collection={collection} />
+        <SwipperSlider
+          collection={collection}
+          showThumbnails={false}
+          showFullscreenButton={false}
+          showPlayButton={false}
+          autoPlay={true}
+          slideDuration={1000}
+          slideInterval={5000}
+        />
       </>
     </SliderWrapper>
   );

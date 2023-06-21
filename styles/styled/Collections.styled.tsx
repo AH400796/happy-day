@@ -51,7 +51,7 @@ export const CollectionsText = styled.div`
   width: 100%;
   padding: 20px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   text-indent: 20px;
@@ -61,13 +61,11 @@ export const CollectionsText = styled.div`
 
   @media screen and (min-width: 768px) {
     margin-bottom: 15px;
-
-    font-size: 16px;
+    font-size: 18px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 20px;
-
     font-size: 20px;
   }
 `;

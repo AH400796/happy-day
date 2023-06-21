@@ -41,7 +41,7 @@ export const AboutTitleText = styled.span`
 export const AboutText = styled.div`
   padding: 20px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   text-indent: 20px;
@@ -55,7 +55,7 @@ export const AboutText = styled.div`
     margin-bottom: 15px;
     column-count: 2;
     column-gap: 40px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   @media screen and (min-width: 1280px) {

@@ -45,7 +45,7 @@ export const FeedbackTitleText = styled.span`
 export const FeedbackText = styled.div`
   width: 100%;
   padding: 20px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   text-indent: 20px;
@@ -54,7 +54,7 @@ export const FeedbackText = styled.div`
   color: #4e6739;
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -73,16 +73,19 @@ export const AverageRating = styled.p`
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-bottom: 5px;
 
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
+    margin-bottom: 10px;
+    font-size: 18px;
   }
 
   @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
     font-size: 20px;
   }
 `;
