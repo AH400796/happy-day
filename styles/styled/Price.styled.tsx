@@ -127,7 +127,16 @@ export const Text = styled.div`
   }
 `;
 
+export const FirstColTitle = styled.span`
+  display: block;
+  width: 80%;
+  padding: 25px;
+  line-height: normal;
+  border-right: 1px solid #4e6739;
+`;
+
 export const FirstCol = styled.span`
+  display: block;
   width: 80%;
   padding: 15px;
   line-height: normal;
@@ -136,9 +145,19 @@ export const FirstCol = styled.span`
 
 export const SecondCol = styled.span`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 20%;
   height: 100%;
-  padding: 10px 0;
+`;
+
+export const Promo = styled.span`
+  color: red;
+  line-height: 1;
+  text-align: center;
+`;
+
+export const OldPrice = styled.span`
+  text-decoration: line-through red;
 `;

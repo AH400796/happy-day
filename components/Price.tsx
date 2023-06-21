@@ -11,8 +11,11 @@ import {
   Title,
   Text,
   FirstCol,
+  FirstColTitle,
   SecondCol,
   PricePackageWrapper,
+  Promo,
+  OldPrice,
 } from "@styles/styled/Price.styled";
 
 const Price: React.FC = () => {
@@ -32,8 +35,14 @@ const Price: React.FC = () => {
         <PricePackage>
           <PackageWrapper>
             <Title>
-              <FirstCol>Пакет "GROUP VIP" </FirstCol>
-              <SecondCol>8 500</SecondCol>
+              <FirstColTitle>Пакет "GROUP VIP"</FirstColTitle>
+              <SecondCol>
+                <Promo>
+                  Акція!
+                  <br /> 8 500
+                </Promo>
+                <OldPrice>9 500</OldPrice>
+              </SecondCol>
             </Title>
             <Text>
               <FirstCol>
@@ -109,7 +118,7 @@ const Price: React.FC = () => {
         <PricePackage>
           <PackageWrapper>
             <Title>
-              <FirstCol>Пакет "GROUP STANDART" </FirstCol>
+              <FirstColTitle>Пакет "GROUP STANDART" </FirstColTitle>
               <SecondCol>6 500</SecondCol>
             </Title>
             <Text>
@@ -185,8 +194,14 @@ const Price: React.FC = () => {
         <PricePackage>
           <PackageWrapper>
             <Title>
-              <FirstCol>Пакет "VIP" </FirstCol>
-              <SecondCol>3 550</SecondCol>
+              <FirstColTitle>Пакет "VIP" </FirstColTitle>
+              <SecondCol>
+                <Promo>
+                  Акція!
+                  <br /> 3 550
+                </Promo>
+                <OldPrice>4 000</OldPrice>
+              </SecondCol>
             </Title>
             <Text>
               <FirstCol>
@@ -254,7 +269,7 @@ const Price: React.FC = () => {
         <PricePackage>
           <PackageWrapper>
             <Title>
-              <FirstCol>Пакет "STANDART" </FirstCol>
+              <FirstColTitle>Пакет "STANDART" </FirstColTitle>
               <SecondCol>2 500</SecondCol>
             </Title>
             <Text>
@@ -321,7 +336,7 @@ const Price: React.FC = () => {
         <PricePackage>
           <PackageWrapper>
             <Title>
-              <FirstCol>Пакет "MINIMAL" </FirstCol>
+              <FirstColTitle>Пакет "MINIMAL" </FirstColTitle>
               <SecondCol>1 500</SecondCol>
             </Title>
             <Text>

@@ -31,7 +31,7 @@ export const HeroOverlay = styled.div`
   height: 40px;
   border-radius: 20px;
   transform: translate(-50%, 10%);
-  background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
+  background: linear-gradient(180deg, #4e6739 0%, #aecc94 100%);
 
   @media screen and (min-width: 768px) {
     width: 185px;

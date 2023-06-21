@@ -27,7 +27,7 @@ const SliderOnMain: React.FC = () => {
           showPlayButton={false}
           autoPlay={true}
           slideDuration={1000}
-          slideInterval={5000}
+          slideInterval={4000}
         />
       </>
     </SliderWrapper>
