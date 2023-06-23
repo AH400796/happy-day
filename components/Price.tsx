@@ -1,11 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
-import { FaCrown } from "react-icons/fa";
+
 import { BsCheck } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
 import {
   PackageWrapper,
   PriceTitle,
-  PriceTitleText,
   PriceText,
   PricePackage,
   Title,
@@ -21,11 +20,7 @@ import {
 const Price: React.FC = () => {
   return (
     <>
-      <PriceTitle>
-        <FaCrown size={25} color={"#f78629"} />
-        <PriceTitleText>ТАРИФНІ ПАКЕТИ</PriceTitleText>
-        <FaCrown size={25} color={"#f78629"} />
-      </PriceTitle>
+      <PriceTitle>Тарифні пакети</PriceTitle>
       <PriceText>
         Ознайомтесь з доступними тарифними пакетами і послугами, що в них
         входять, та оберіть той, який Вам ідеально підійде!{" "}

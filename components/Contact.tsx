@@ -1,18 +1,9 @@
-import { FaCrown } from "react-icons/fa";
-import {
-  ContactTitle,
-  ContactTitleText,
-  ContactText,
-} from "@styles/styled/Contact.styled";
+import { ContactTitle, ContactText } from "@styles/styled/Contact.styled";
 
 const Contact: React.FC = () => {
   return (
     <>
-      <ContactTitle>
-        <FaCrown size={25} color={"#f78629"} />
-        <ContactTitleText>{"ЗВ'ЯЖІТЬСЯ З НАМИ"}</ContactTitleText>
-        <FaCrown size={25} color={"#f78629"} />
-      </ContactTitle>
+      <ContactTitle>{"Зв'яжіться з нами"}</ContactTitle>
       <ContactText>
         <p>
           Якщо Ви хочете замовити фотосесію або зацікавленні в отриманні

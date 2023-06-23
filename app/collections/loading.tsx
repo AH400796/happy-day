@@ -7,7 +7,7 @@ import { Wrapper } from "@styles/styled/Loading.styled";
 const Loading: React.FC = () => {
   return (
     <Wrapper>
-      <Loader width={"150"} />;
+      <Loader width={"150"} />
     </Wrapper>
   );
 };

@@ -1,21 +1,11 @@
 "use client";
 
-import { FaCrown } from "react-icons/fa";
-
-import {
-  AboutTitle,
-  AboutTitleText,
-  AboutText,
-} from "@styles/styled/About.styled";
+import { AboutTitle, AboutText } from "@styles/styled/About.styled";
 
 const About: React.FC = () => {
   return (
     <>
-      <AboutTitle>
-        <FaCrown size={25} color={"#f78629"} />
-        <AboutTitleText>НАША МІСІЯ</AboutTitleText>
-        <FaCrown size={25} color={"#f78629"} />
-      </AboutTitle>
+      <AboutTitle>Наша місія</AboutTitle>
       <AboutText>
         <p>
           Мабуть кожна юна дівчинка, вперше приміряючи вдома перед зеркалом

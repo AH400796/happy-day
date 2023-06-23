@@ -11,8 +11,7 @@ export const ContactsWrapper = styled.div`
   gap: 10px;
 
   font-size: 16px;
-  border: 2px solid #f78629;
-  border-radius: 15px;
+  border: none;
   padding: 20px 20px 20px 20px;
 `;
 
@@ -27,7 +26,7 @@ export const SocialContacts = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
 `;
 
 export const ContactText = styled.a`

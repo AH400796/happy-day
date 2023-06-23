@@ -1,13 +1,12 @@
 "use client";
 
 import { useState, useEffect, Suspense } from "react";
-import { FaCrown } from "react-icons/fa";
 import { getFeedbacks } from "@utils/api";
+import { FaCrown } from "react-icons/fa";
 import FeedbackList from "@components/FeedbackList";
 import Loader from "./Loader";
 import {
   FeedbackTitle,
-  FeedbackTitleText,
   FeedbackText,
   Anchor,
   AverageRating,
@@ -41,11 +40,7 @@ const Feedback: React.FC = () => {
       : averageRating.toFixed(0);
   return (
     <>
-      <FeedbackTitle>
-        <FaCrown size={25} color={"#f78629"} />
-        <FeedbackTitleText>ВІДГУКИ КЛІЄНТІВ</FeedbackTitleText>
-        <FaCrown size={25} color={"#f78629"} />
-      </FeedbackTitle>
+      <FeedbackTitle>Відгуки клієнтів</FeedbackTitle>
       <Suspense fallback={<Loader width="100" />}>
         <FeedbackText>
           {!isNaN(averageRating) && (
