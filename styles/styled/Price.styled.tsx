@@ -59,6 +59,10 @@ export const PriceText = styled.p`
   }
 `;
 
+export const SpanStyled = styled.span`
+  padding-left: 20px;
+`;
+
 export const PricePackageWrapper = styled.ul`
   width: 100%;
   height: 100%;

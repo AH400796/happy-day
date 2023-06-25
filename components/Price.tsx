@@ -13,6 +13,7 @@ import {
   FirstColTitle,
   SecondCol,
   PricePackageWrapper,
+  SpanStyled,
   Promo,
   OldPrice,
 } from "@styles/styled/Price.styled";
@@ -197,7 +198,7 @@ const Price: React.FC = () => {
                   <br /> 3 550
                 </Promo>
                 <OldPrice>4 000</OldPrice> */}
-                3 550
+                3 900
               </SecondCol>
             </Title>
             <Text>
@@ -267,7 +268,7 @@ const Price: React.FC = () => {
           <PackageWrapper>
             <Title>
               <FirstColTitle>Пакет "STANDART" </FirstColTitle>
-              <SecondCol>2 500</SecondCol>
+              <SecondCol>2 800</SecondCol>
             </Title>
             <Text>
               <FirstCol>Індивідуальна професійна фотозйомка (30хв)</FirstCol>
@@ -332,7 +333,7 @@ const Price: React.FC = () => {
           <PackageWrapper>
             <Title>
               <FirstColTitle>Пакет "MINIMAL" </FirstColTitle>
-              <SecondCol>1 500</SecondCol>
+              <SecondCol>2 000</SecondCol>
             </Title>
             <Text>
               <FirstCol>Індивідуальна професійна фотозйомка (30хв)</FirstCol>
@@ -396,6 +397,11 @@ const Price: React.FC = () => {
       <PriceText>
         * Крім вище згаданих послуг та подарунків перелічених в пакетах, усім
         дівчаткам залишаються тілесні колготи, які видаються для фотозйомки.
+        <br></br>
+        <SpanStyled>
+          ** По бажанню клієнти можуть приносити з собою свій <b>candy-bar</b> -
+          власний набір солодощів для зйомки.
+        </SpanStyled>
       </PriceText>
     </>
   );
