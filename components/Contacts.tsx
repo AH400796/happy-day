@@ -32,7 +32,7 @@ const Contacts: React.FC = () => {
       </ContactWrapper>
       <SocialContacts>
         <StyledLink
-          href="https://www.instagram.com/yourshappyday/"
+          href="https://www.instagram.com/yours_happy_day/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="instagram"
@@ -52,7 +52,7 @@ const Contacts: React.FC = () => {
           </IconWrapper>
         </StyledLink>
         <StyledLink
-          href="https://t.me/AH400796"
+          href="https://t.me/Julia_happy_day"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="telegram"
