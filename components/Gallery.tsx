@@ -1,22 +1,15 @@
 "use client";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { CldImage } from "next-cloudinary";
-import { SizeContext } from "@app/size";
 import Modal from "@components/Modal";
 import SwipperSlider from "@components/SwipperSlider";
+import GalleryItem from "./GalleryItem";
 
 import {
   Wrapper,
-  ItemWrapper,
   GalleryTitle,
   GalleryList,
 } from "@styles/styled/Gallery.styled";
-
-interface IItemProps {
-  url: string;
-  onClick: (url: string) => void;
-}
 
 interface ICollection {
   id: number;
@@ -27,30 +20,6 @@ interface ICollection {
 interface IProps {
   collections: ICollection[];
 }
-
-const GalleryItem: React.FC<IItemProps> = ({ url, onClick }) => {
-  const [width] = useContext<number[]>(SizeContext);
-
-  const handleOnClick = () => {
-    onClick(url);
-  };
-
-  const imageWidth: number =
-    width < 480 ? width - 30 : width < 768 ? 440 : width < 1280 ? 347 : 315;
-  const imageHeight: number = (imageWidth * 3) / 5;
-
-  return (
-    <ItemWrapper onClick={handleOnClick}>
-      <CldImage
-        src={url}
-        width={imageWidth}
-        height={imageHeight}
-        alt="photo"
-        priority
-      />
-    </ItemWrapper>
-  );
-};
 
 const Gallery: React.FC<IProps> = ({ collections }) => {
   const [showSlider, setShowSlider] = useState<boolean>(false);
