@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useContext } from "react";
+import { useContext } from "react";
 import Image from "next/image";
 import { SizeContext } from "@app/size";
 
@@ -39,25 +39,11 @@ const GalleryItem: React.FC<IItemProps> = ({ url, onClick }) => {
   const imageHeight: number = isImageLandscape
     ? imageWidth * 0.665
     : imageWidth * 1.503;
-  const degrees = (): number => {
-    const randomDegree = Math.round((Math.random() - 0.5) * 20);
-    if (randomDegree < 0) {
-      return randomDegree - 10;
-    } else {
-      return randomDegree + 10;
-    }
-  };
 
   return (
     <ItemWrapper onClick={handleOnClick}>
-      <PhotoCard data-type={isImageLandscape} data-degrees={degrees()}>
-        <Image
-          src={url}
-          width={imageWidth}
-          height={imageHeight}
-          alt="photo"
-          priority
-        />
+      <PhotoCard data-type={isImageLandscape}>
+        <Image src={url} width={imageWidth} height={imageHeight} alt="photo" />
       </PhotoCard>
     </ItemWrapper>
   );

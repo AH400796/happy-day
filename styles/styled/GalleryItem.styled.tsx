@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 interface IStyledProps {
   "data-type"?: boolean;
-  "data-degrees"?: number;
 }
 
 export const PhotoCard = styled.div<IStyledProps>`
@@ -19,7 +18,8 @@ export const PhotoCard = styled.div<IStyledProps>`
   background-color: #ffffff;
   box-shadow: 2px 3px 5px #7c7c7c;
   padding: 10px 10px 20px 10px;
-  transform: ${(props) => `rotate(${props["data-degrees"]}deg)`};
+  transform: ${(props) =>
+    props["data-type"] ? `rotate(-15deg)` : `rotate(10deg)`};
 
   @media screen and (min-width: 768px) {
     /* width: 350px;
