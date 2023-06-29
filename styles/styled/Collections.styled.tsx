@@ -42,7 +42,7 @@ export const CollectionsTitle = styled.h2`
     display: inline-block;
     width: 30px;
     height: 25px;
-    background-image: url("crown.png");
+    background-image: url("/crown.png");
     background-repeat: no-repeat;
     background-position: center;
   }
