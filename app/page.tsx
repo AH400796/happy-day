@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 
-import { ToastContainer } from "react-toastify";
 import Price from "@components/Price";
 import Container from "@components/Container";
 import Section from "@components/Section";

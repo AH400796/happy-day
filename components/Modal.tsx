@@ -14,8 +14,13 @@ interface IProps {
   onClose: () => void;
   children: ReactNode;
 }
+// const modalRoot: HTMLElement | null =
+//   typeof document !== "undefined"
+//     ? document.getElementById("modal-root")!
+// Element | DocumentFragment'
+//     : null;
 
-const modalRoot: HTMLElement | null = document.querySelector("#modal-root")!;
+const modalRoot: HTMLElement | null = document.getElementById("modal-root")!;
 
 const Modal: React.FC<IProps> = ({ onClose, children }) => {
   useEffect(() => {
