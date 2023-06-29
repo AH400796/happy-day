@@ -1,22 +1,22 @@
 [
   {
-    "original": "images/1.jpg",
-    "thumbnail": "images/1.jpg"
+    "original": "/tiffany1.jpg",
+    "thumbnail": "/tiffany1.jpg"
   },
   {
-    "original": "images/2.jpg",
-    "thumbnail": "images/2.jpg"
+    "original": "/tiffany2.jpg",
+    "thumbnail": "/tiffany2.jpg"
   },
   {
-    "original": "images/3.jpg",
-    "thumbnail": "images/3.jpg"
+    "original": "/tiffany3.jpg",
+    "thumbnail": "/tiffany3.jpg"
   },
   {
-    "original": "images/4.jpg",
-    "thumbnail": "images/4.jpg"
+    "original": "/tiffany4.jpg",
+    "thumbnail": "/tiffany4.jpg"
   },
   {
-    "original": "images/5.jpg",
-    "thumbnail": "images/5.jpg"
+    "original": "/tiffany5.jpg",
+    "thumbnail": "/tiffany5.jpg"
   }
 ]
