@@ -57,7 +57,8 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
     <Wrapper>
       <GalleryTitle>Колекція {`"${collection.name}"`}</GalleryTitle>
       <GalleryList>
-        {/* {collection.urls.map((el) => {
+        <Image src="/1.jpg" width={300} height={250} alt="photo" />
+        {collection.urls.map((el) => {
           return (
             <GalleryItem
               key={el.original}
@@ -65,8 +66,7 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
               onClick={handleOnClick}
             />
           );
-        })} */}
-        <Image src="/1.jpg" width={300} height={250} alt="photo" />
+        })}
       </GalleryList>
       {showSlider && (
         <Modal onClose={handleOnClose}>
