@@ -43,8 +43,8 @@ export const ItemWrapper = styled.div`
   box-shadow: 2px 3px 5px #bbb8b8;
   cursor: pointer;
 
-  flex-basis: calc((100% - 0) / 1);
-  height: 450px;
+  flex-basis: calc((100% - 0px) / 1);
+  height: 300px;
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 1 * 10px) / 2);

@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Modal from "@components/Modal";
 import SwipperSlider from "@components/SwipperSlider";
 import GalleryItem from "./GalleryItem";
+import Image from "next/image";
 
 import {
   Wrapper,
@@ -56,7 +57,7 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
     <Wrapper>
       <GalleryTitle>Колекція {`"${collection.name}"`}</GalleryTitle>
       <GalleryList>
-        {collection.urls.map((el) => {
+        {/* {collection.urls.map((el) => {
           return (
             <GalleryItem
               key={el.original}
@@ -64,7 +65,13 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
               onClick={handleOnClick}
             />
           );
-        })}
+        })} */}
+        <Image
+          src={"/images/tiffany/1.jpg"}
+          width={300}
+          height={250}
+          alt="photo"
+        />
       </GalleryList>
       {showSlider && (
         <Modal onClose={handleOnClose}>
