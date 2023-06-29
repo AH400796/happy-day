@@ -12,8 +12,8 @@ export const Overlay = styled.div`
   justify-content: center;
   align-items: flex-start;
   padding: 20px 20px 0;
-  background-color: #44443d8d;
-  backdrop-filter: blur(2px);
+  background-color: #505050c6;
+  backdrop-filter: blur(3px);
 `;
 
 export const ModalWindow = styled.div`
