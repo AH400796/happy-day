@@ -66,12 +66,7 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
             />
           );
         })} */}
-        <Image
-          src={"/images/tiffany/1.jpg"}
-          width={300}
-          height={250}
-          alt="photo"
-        />
+        <Image src="/1.jpg" width={300} height={250} alt="photo" />
       </GalleryList>
       {showSlider && (
         <Modal onClose={handleOnClose}>
