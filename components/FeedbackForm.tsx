@@ -94,7 +94,12 @@ const FeedbackForm: React.FC = () => {
             <StyledForm>
               <StyledInputLabel>
                 {`Ваше ім'я:`}
-                <StyledInput type="text" name="userName" placeholder="Ім'я" />
+                <StyledInput
+                  type="text"
+                  name="userName"
+                  placeholder="Ім'я"
+                  autocomplete="off"
+                />
                 {errors.userName && touched.userName && (
                   <ErrWrapper>{errors.userName}</ErrWrapper>
                 )}

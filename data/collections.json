@@ -2,6 +2,8 @@
   {
     "id": 1,
     "name": "Tiffany",
+    "text1": "Креативна фотосесія в стилі \"Сніданок у \"Тіффані\" буде незабутнім досвідом для маленьких дівчаток, які хочуть втілити свою мрію - стати справжніми леді. Чорна елегантна приталена сукня, довгі рукавички та перші туфельки на підборах, допоможуть створити цей чарівний і стильний образ. Вишукані аксесуари, такі як масивне намисто із перлів та великі сонцезахисні окуляри, додають розкоші та ретро-стилю до  образу. Висока зачіска 'Бабетта' з короною та легкий макіяж підкреслять образ справжньої леді Одрі Гепберн, який перетвориться у знаменитий \"Сніданок у \"Тіффані\" по-українськи.",
+    "text2": "Ця колекція дозволить маленьким принцесам відчути себе справжніми леді, зануритися у світ стилю і елегантності, як у знаменитому фільмі \"Сніданок у \"Тіффані\". Ця незабутня подія тимчасово перетворить їх мрії на реальність, створить чарівну атмосферу кінозйомки та залишиться приємним спогадом на все життя.",
     "urls": [
       {
         "original": "/tiffany1.jpg",
@@ -69,6 +71,8 @@
   {
     "id": 2,
     "name": "Ukrainian style",
+    "text1": "",
+    "text2": "",
     "urls": [
       {
         "original": "/tiffany1.jpg",
@@ -135,6 +139,8 @@
   {
     "id": 3,
     "name": "Girls party Girls party",
+    "text1": "",
+    "text2": "",
     "urls": [
       {
         "original": "/tiffany1.jpg",
@@ -201,6 +207,8 @@
   {
     "id": 4,
     "name": "Barbi style",
+    "text1": "",
+    "text2": "",
     "urls": [
       {
         "original": "/tiffany1.jpg",
@@ -266,67 +274,69 @@
   },
   {
     "id": 5,
-    "name": "Any style",
+    "name": "Colors of nature",
+    "text1": "Колекція \"Барви природи\" захоплює чудовою гаммою веселки, підкреслюючи природню красу кожної з модельок та додаючи особливого шарму якравим та наповненим теплом фото. Дивлячись на ці фото, подумки поринаєш в літо, яке рясніє фарбами польових квітів, зеленню лісів, гаїв та міських парків.",
+    "text2": "Ця колекція підніме настрій та запам'ятається Вашій принцесі та її подружкам надовго. Кожна з них під час фотозйомки стане особливим кольоровим промінчиком веселки, який даруватиме тепло усім навколо.",
     "urls": [
       {
-        "original": "/tiffany1.jpg",
-        "thumbnail": "/tiffany1.jpg"
+        "original": "/rainbow1.jpg",
+        "thumbnail": "/rainbow1.jpg"
       },
       {
-        "original": "/tiffany2.jpg",
-        "thumbnail": "/tiffany2.jpg"
+        "original": "/rainbow2.jpg",
+        "thumbnail": "/rainbow2.jpg"
       },
       {
-        "original": "/tiffany3.jpg",
-        "thumbnail": "/tiffany3.jpg"
+        "original": "/rainbow3L.jpg",
+        "thumbnail": "/rainbow3L.jpg"
       },
       {
-        "original": "/tiffany4.jpg",
-        "thumbnail": "/tiffany4.jpg"
+        "original": "/rainbow4L.jpg",
+        "thumbnail": "/rainbow4L.jpg"
       },
       {
-        "original": "/tiffany5.jpg",
-        "thumbnail": "/tiffany5.jpg"
+        "original": "/rainbow5.jpg",
+        "thumbnail": "/rainbow5.jpg"
       },
       {
-        "original": "/tiffany6L.jpg",
-        "thumbnail": "/tiffany6L.jpg"
+        "original": "/rainbow6L.jpg",
+        "thumbnail": "/rainbow6L.jpg"
       },
       {
-        "original": "/tiffany7.jpg",
-        "thumbnail": "/tiffany7.jpg"
+        "original": "/rainbow7.jpg",
+        "thumbnail": "/rainbow7.jpg"
       },
       {
-        "original": "/tiffany8L.jpg",
-        "thumbnail": "/tiffany8L.jpg"
+        "original": "/rainbow8.jpg",
+        "thumbnail": "/rainbow8.jpg"
       },
       {
-        "original": "/tiffany9.jpg",
-        "thumbnail": "/tiffany9.jpg"
+        "original": "/rainbow9.jpg",
+        "thumbnail": "/rainbow9.jpg"
       },
       {
-        "original": "/tiffany10.jpg",
-        "thumbnail": "/tiffany10.jpg"
+        "original": "/rainbow10.jpg",
+        "thumbnail": "/rainbow10.jpg"
       },
       {
-        "original": "/tiffany11.jpg",
-        "thumbnail": "/tiffany11.jpg"
+        "original": "/rainbow11.jpg",
+        "thumbnail": "/rainbow11.jpg"
       },
       {
-        "original": "/tiffany12.jpg",
-        "thumbnail": "/tiffany12.jpg"
+        "original": "/rainbow12.jpg",
+        "thumbnail": "/rainbow12.jpg"
       },
       {
-        "original": "/tiffany13.jpg",
-        "thumbnail": "/tiffany13.jpg"
+        "original": "/rainbow13.jpg",
+        "thumbnail": "/rainbow13.jpg"
       },
       {
-        "original": "/tiffany14.jpg",
-        "thumbnail": "/tiffany14.jpg"
+        "original": "/rainbow14L.jpg",
+        "thumbnail": "/rainbow14L.jpg"
       },
       {
-        "original": "/tiffany15.jpg",
-        "thumbnail": "/tiffany15.jpg"
+        "original": "/rainbow15L.jpg",
+        "thumbnail": "/rainbow15L.jpg"
       }
     ]
   }

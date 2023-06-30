@@ -10,11 +10,14 @@ import {
   Wrapper,
   GalleryTitle,
   GalleryList,
+  GalleryText,
 } from "@styles/styled/Gallery.styled";
 
 interface ICollection {
   id: number;
   name: string;
+  text1: string;
+  text2: string;
   urls: { original: string; thumbnail: string }[];
 }
 
@@ -55,6 +58,10 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
   return (
     <Wrapper>
       <GalleryTitle>Колекція {`"${collection.name}"`}</GalleryTitle>
+      <GalleryText>
+        <p>{collection.text1}</p>
+        <p>{collection.text2}</p>
+      </GalleryText>
       <GalleryList>
         {collection.urls.map((el) => {
           return (
@@ -69,7 +76,7 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
       {showSlider && (
         <Modal onClose={handleOnClose}>
           <SwipperSlider
-            collection={collection.urls}
+            collections={collection.urls}
             showThumbnails={false}
             startIndex={startIndex}
           />

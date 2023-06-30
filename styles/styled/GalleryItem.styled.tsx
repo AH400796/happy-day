@@ -6,13 +6,15 @@ interface IStyledProps {
   "data-type"?: boolean;
 }
 
+interface IStyledCollectionProps {
+  "data-collection"?: string;
+}
+
 export const PhotoCard = styled.div<IStyledProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 350px;
-  height: 350px; */
 
   transform: rotate(10deg);
   background-color: #ffffff;
@@ -22,23 +24,24 @@ export const PhotoCard = styled.div<IStyledProps>`
     props["data-type"] ? `rotate(-15deg)` : `rotate(10deg)`};
 
   @media screen and (min-width: 768px) {
-    /* width: 350px;
-    height: 350px; */
   }
 
   @media screen and (min-width: 1280px) {
-    /* width: 350px;
-    height: 350px; */
   }
 `;
 
-export const ItemWrapper = styled.div`
+export const ItemWrapper = styled.div<IStyledCollectionProps>`
   display: flex;
   justify-content: center;
   align-items: center;
   align-self: flex-end;
   overflow: hidden;
-  background: linear-gradient(180deg, #bbe29b 0%, #ffffff 100%);
+  background-color: #bbe29ba2;
+  /* background: ${(props) => {
+    if (props["data-collection"]?.includes("tiffany")) {
+      return `linear-gradient(45deg,  #4cebd0 0%,#0d0f0f 100%)`;
+    }
+  }}; */
 
   box-shadow: 2px 3px 5px #bbb8b8;
   cursor: pointer;

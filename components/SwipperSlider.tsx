@@ -3,12 +3,12 @@
 import ReactImageGallery, { ReactImageGalleryProps } from "react-image-gallery";
 
 interface IProps {
-  collection: ReactImageGalleryProps["items"];
+  collections: ReactImageGalleryProps["items"];
   [key: string]: any;
 }
 
-const SwipperSlider: React.FC<IProps> = ({ collection, ...prop }) => {
-  return <ReactImageGallery items={collection} {...prop} />;
+const SwipperSlider: React.FC<IProps> = ({ collections, ...prop }) => {
+  return <ReactImageGallery items={collections} {...prop} />;
 };
 
 export default SwipperSlider;

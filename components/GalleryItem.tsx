@@ -41,7 +41,7 @@ const GalleryItem: React.FC<IItemProps> = ({ url, onClick }) => {
     : imageWidth * 1.503;
 
   return (
-    <ItemWrapper onClick={handleOnClick}>
+    <ItemWrapper onClick={handleOnClick} data-collection={url}>
       <PhotoCard data-type={isImageLandscape}>
         <Image src={url} width={imageWidth} height={imageHeight} alt="photo" />
       </PhotoCard>
