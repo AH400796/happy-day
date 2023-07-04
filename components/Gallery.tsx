@@ -60,6 +60,7 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
       <GalleryTitle>Колекція {`"${collection.name}"`}</GalleryTitle>
       <GalleryText>
         <p>{collection.text1}</p>
+        <br></br>
         <p>{collection.text2}</p>
       </GalleryText>
       <GalleryList>

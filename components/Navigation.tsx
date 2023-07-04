@@ -22,7 +22,7 @@ const Navigation: React.FC = () => {
     <StyledNav>
       <ActiveStyledLink href="/">ГОЛОВНА</ActiveStyledLink>
       <ActiveStyledLink href="/collections">ФОТОКОЛЕКЦІЇ</ActiveStyledLink>
-      <ActiveStyledLink href="/prices">ПРО НАС</ActiveStyledLink>
+      <ActiveStyledLink href="/about">ПРО НАС</ActiveStyledLink>
     </StyledNav>
   );
 };
