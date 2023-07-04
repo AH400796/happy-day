@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 `;
 
 export const Text = styled.p`
@@ -21,9 +21,23 @@ export const ResetBtn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 15px;
+  width: 150px;
   height: 40px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 600;
   color: #4e6739;
+  background: #ffdd61;
+  border: 1px solid #ffdd61;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  &:hover,
+  &:focus {
+    background: #4e6739;
+    color: #f78629;
+    border: 1px solid #f78629;
+  }
 `;

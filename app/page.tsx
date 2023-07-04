@@ -32,7 +32,6 @@ const Home = async () => {
           <Price />
         </Container>
       </Section>
-
       <Section>
         <Container>
           <Feedback />

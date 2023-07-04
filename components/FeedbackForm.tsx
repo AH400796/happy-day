@@ -98,7 +98,7 @@ const FeedbackForm: React.FC = () => {
                   type="text"
                   name="userName"
                   placeholder="Ім'я"
-                  autocomplete="off"
+                  autoComplete="off"
                 />
                 {errors.userName && touched.userName && (
                   <ErrWrapper>{errors.userName}</ErrWrapper>

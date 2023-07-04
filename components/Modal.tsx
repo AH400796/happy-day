@@ -1,5 +1,6 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useEffect, ReactNode } from "react";
 import { createPortal } from "react-dom";
 import { IoMdClose } from "react-icons/io";

@@ -1,10 +1,9 @@
-import { Metadata } from "next";
-
 import { Play } from "next/font/google";
 import "@styles/globals.css";
 import StyledComponentsRegistry from "@utils/registry";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
+import ModalRoot from "@components/ModalRoot";
 import SizeProvider from "./size";
 
 type LinkObjectType = {
@@ -52,7 +51,7 @@ const RootLayout: React.FC<Children> = ({ children }) => {
             </SizeProvider>
           </ContentWrapper>
           <Footer />
-          <div id="modal-root"></div>
+          <ModalRoot />
         </StyledComponentsRegistry>
       </body>
     </html>
