@@ -21,7 +21,7 @@ const Navigation: React.FC = () => {
   return (
     <StyledNav>
       <ActiveStyledLink href="/">ГОЛОВНА</ActiveStyledLink>
-      <ActiveStyledLink href="/collections">КОЛЕКЦІЇ</ActiveStyledLink>
+      <ActiveStyledLink href="/collections">ФОТОКОЛЕКЦІЇ</ActiveStyledLink>
       <ActiveStyledLink href="/prices">ПРО НАС</ActiveStyledLink>
     </StyledNav>
   );

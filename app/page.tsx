@@ -12,6 +12,8 @@ import { ContentWrapper } from "@styles/styled/Pages.styled";
 
 export const metadata: Metadata = {
   title: "Твій щасливий день",
+  description:
+    "Індивідуальні та групові дитячі фотосесії для дівчаток на будь-який смак",
 };
 
 const Home = async () => {

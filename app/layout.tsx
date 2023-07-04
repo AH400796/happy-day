@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 import { Play } from "next/font/google";
 import "@styles/globals.css";
 import StyledComponentsRegistry from "@utils/registry";
@@ -5,9 +7,20 @@ import Header from "@components/Header";
 import Footer from "@components/Footer";
 import SizeProvider from "./size";
 
+type LinkObjectType = {
+  rel: string;
+  href: string;
+  type: string;
+  sizes: string;
+};
+
+type LinkType = {
+  link: LinkObjectType;
+};
+
 import { ContentWrapper, StyledMain } from "@styles/styled/RootLayout.styled";
 
-export const metadata = {
+export const metadata: LinkType = {
   link: {
     rel: "icon",
     href: "/favicon.ico",

@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Колекції",
+  title: "Наші фотоколекції",
+  description: "Перегляньте наші фотоколекції та оберіть ті, що підходять Вам",
 };
 
 const CollectionsPage: React.FC = () => {

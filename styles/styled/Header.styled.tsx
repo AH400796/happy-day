@@ -27,7 +27,7 @@ export const HeaderWrapper = styled.div`
   align-items: center;
 
   @media screen and (min-width: 768px) {
-    gap: 20px;
+    gap: 10px;
   }
 
   @media screen and (min-width: 1280px) {

@@ -10,7 +10,7 @@ import { ContentWrapper } from "@styles/styled/Pages.styled";
 import collections from "@data/collections.json";
 
 export const metadata: Metadata = {
-  title: "Колекції",
+  title: "Наші фотоколекції",
 };
 
 interface IProps {

@@ -16,17 +16,25 @@ export const PhotoCard = styled.div<IStyledProps>`
   justify-content: center;
   align-items: center;
 
-  transform: rotate(10deg);
   background-color: #ffffff;
   box-shadow: 2px 3px 5px #7c7c7c;
   padding: 10px 10px 20px 10px;
   transform: ${(props) =>
-    props["data-type"] ? `rotate(-15deg)` : `rotate(10deg)`};
+    props["data-type"] ? `rotate(-15deg) scale(1)` : `rotate(10deg) scale(1)`};
+  transition: transform 0.35s ease;
 
   @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1280px) {
+  }
+
+  &:hover,
+  &:focus {
+    transform: ${(props) =>
+      props["data-type"]
+        ? `rotate(-15deg) scale(1.05)`
+        : `rotate(10deg) scale(1.05)`};
   }
 `;
 
@@ -37,11 +45,6 @@ export const ItemWrapper = styled.div<IStyledCollectionProps>`
   align-self: flex-end;
   overflow: hidden;
   background-color: #bbe29ba2;
-  /* background: ${(props) => {
-    if (props["data-collection"]?.includes("tiffany")) {
-      return `linear-gradient(45deg,  #4cebd0 0%,#0d0f0f 100%)`;
-    }
-  }}; */
 
   box-shadow: 2px 3px 5px #bbb8b8;
   cursor: pointer;

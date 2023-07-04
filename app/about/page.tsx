@@ -3,7 +3,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ціни та умови замовлення",
+  title: "Про нас",
+  description:
+    "Детальніше про нашу діяльність. Порядок та умови бронювання фотосесій",
 };
 
 import Container from "@components/Container";
