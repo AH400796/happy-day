@@ -41,12 +41,12 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
 
   const collection: ICollection = collections.filter(
     (collection) =>
-      collection?.name.toLowerCase().replace(/\ /g, "_") === pathname.slice(13)
+      collection.name.toLowerCase().replace(/\ /g, "_") === pathname.slice(13)
   )[0];
 
   const handleOnClick = (url: string): void => {
     setShowSlider(true);
-    const index: number = collection?.urls.findIndex(
+    const index: number = collection.urls.findIndex(
       (el) => el.original === url
     );
     setStartIndex(index);
@@ -58,11 +58,11 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
 
   return (
     <Wrapper>
-      <GalleryTitle>Колекція {`"${collection?.name}"`}</GalleryTitle>
+      <GalleryTitle>Колекція {`"${collection.name}"`}</GalleryTitle>
       <GalleryText>
-        <p>{collection?.text1}</p>
+        <p>{collection.text1}</p>
         <br></br>
-        <p>{collection?.text2}</p>
+        <p>{collection.text2}</p>
       </GalleryText>
       <GalleryList>
         {collection?.urls.map((el) => {
@@ -78,7 +78,7 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
       {showSlider && (
         <Modal onClose={handleOnClose}>
           <SwipperSlider
-            collections={collection?.urls}
+            collections={collection.urls}
             showThumbnails={false}
             startIndex={startIndex}
           />
