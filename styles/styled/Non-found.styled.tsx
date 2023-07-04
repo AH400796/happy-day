@@ -16,14 +16,3 @@ export const Text = styled.p`
   font-size: 20px;
   color: #4e6739;
 `;
-
-export const ResetBtn = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 15px;
-  height: 40px;
-  border-radius: 10px;
-  font-size: 20px;
-  color: #4e6739;
-`;

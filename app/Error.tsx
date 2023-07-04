@@ -1,38 +1,22 @@
 "use client";
-import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 import Image from "next/image";
-import { Wrapper, Text } from "@styles/styled/Error.styled";
+import { Wrapper, Text, ResetBtn } from "@styles/styled/Error.styled";
 
-const ErrorPage: React.FC = () => {
-  const [redirectTime, setRedirectTime] = useState<number>(5);
-  const router = useRouter();
-
+const ErrorPage = ({ error, reset }: { error: Error; reset: () => void }) => {
   useEffect(() => {
-    setTimeout(() => router.push("/"), 5000);
-  }, [router]);
-
-  useEffect(() => {
-    const interval: NodeJS.Timer = setInterval(
-      () =>
-        setRedirectTime((prevState: number) => {
-          if (prevState > 0) {
-            return prevState - 1;
-          }
-          return prevState;
-        }),
-      1000
-    );
-    return () => clearInterval(interval);
-  }, []);
+    console.error(error);
+  }, [error]);
 
   return (
     <Wrapper>
-      <Image src="/404.svg" width={150} height={100} alt="404" />
+      <Image src="/error.svg" width={150} height={100} alt="404" />
       <Text>
-        Таку сторінку не знайдено. Ви будете перенаправлені на головну сторінку
-        через {redirectTime} секунд
+        Вибачте, трапилась помилка. Спробуйте повторити свою дію ще раз.
       </Text>
+      <ResetBtn type="button" onClick={() => reset()}>
+        Повторити
+      </ResetBtn>
     </Wrapper>
   );
 };
