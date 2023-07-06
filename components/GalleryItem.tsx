@@ -17,7 +17,9 @@ const GalleryItem: React.FC<IItemProps> = ({ url, onClick }) => {
   const handleOnClick = () => {
     onClick(url);
   };
+
   const isImageLandscape = url.includes("L");
+
   const getCardWidth = (): number => {
     if (isImageLandscape) {
       const imageWidth: number =
