@@ -1,11 +1,24 @@
 "use client";
 
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import Link from "next/link";
 
 interface IStyledProps {
   "data-active"?: boolean;
 }
+
+interface IAnimateProps {
+  "data-animate"?: boolean;
+}
+
+const animTextAppearance = keyframes`
+0% {    
+    opacity: 0;
+  }
+100% {
+    opacity: 1;
+  }
+`;
 
 export const StyledLink = styled(Link)<IStyledProps>`
   min-width: 200px;
@@ -28,9 +41,9 @@ export const WrapperStyled = styled.div<IStyledProps>`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50px;
+  height: ${(props) => (props[`data-active`] ? "70px" : "50px")};
   padding: 0 20px;
-  border-radius: 30px;
+  border-radius: ${(props) => (props[`data-active`] ? "40px" : "30px")};
 
   font-size: 16px;
   font-weight: 700;
@@ -51,9 +64,16 @@ export const WrapperStyled = styled.div<IStyledProps>`
   }
 `;
 
-export const LinkText = styled.span`
+export const LinkText = styled.span<IAnimateProps>`
   text-align: center;
   width: 100%;
   padding: 0 5px;
   line-height: 1;
+  animation-name: ${(props) => {
+    if (props[`data-animate`]) {
+      return animTextAppearance;
+    }
+  }};
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 `;

@@ -12,8 +12,9 @@ import {
 const ActiveStyledLink: React.FC<{
   name: string;
   isActive: boolean;
+  animate: boolean;
   onClick: (name: string) => void;
-}> = ({ name, isActive, onClick }) => {
+}> = ({ name, isActive, onClick, animate }) => {
   const router = useRouter();
 
   useEffect(() => {
@@ -32,7 +33,9 @@ const ActiveStyledLink: React.FC<{
       onClick={() => onClick(name)}
     >
       <WrapperStyled data-active={isActive}>
-        <LinkText data-active={isActive}>{name}</LinkText>
+        <LinkText data-active={isActive} data-animate={animate}>
+          {name}
+        </LinkText>
       </WrapperStyled>
     </StyledLink>
   );
@@ -41,16 +44,18 @@ const ActiveStyledLink: React.FC<{
 interface IProps {
   name: string;
   activeName: string;
+  animate: boolean;
   onClick: (name: string) => void;
 }
 
-const LinkBtn: React.FC<IProps> = ({ name, activeName, onClick }) => {
+const LinkBtn: React.FC<IProps> = ({ name, activeName, onClick, animate }) => {
   const isActive: boolean = activeName === name;
   return (
     <ActiveStyledLink
       isActive={isActive}
       onClick={onClick}
       name={name}
+      animate={animate}
     ></ActiveStyledLink>
   );
 };

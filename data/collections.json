@@ -339,5 +339,73 @@
         "thumbnail": "/images/rainbow/rainbow15L.webp"
       }
     ]
+  },
+  {
+    "id": 6,
+    "name": "Home style",
+    "text1": "Колекція \"Дамашня\" захоплює ",
+    "text2": "Ця колекція ",
+    "urls": [
+      {
+        "original": "/images/rainbow/rainbow1.webp",
+        "thumbnail": "/images/rainbow/rainbow1.webp"
+      },
+      {
+        "original": "/images/rainbow/rainbow2.webp",
+        "thumbnail": "/images/rainbow/rainbow2.webp"
+      },
+      {
+        "original": "/images/rainbow/rainbow3L.webp",
+        "thumbnail": "/images/rainbow/rainbow3L.webp"
+      },
+      {
+        "original": "/images/rainbow/rainbow4L.webp",
+        "thumbnail": "/images/rainbow/rainbow4L.webp"
+      },
+      {
+        "original": "/images/rainbow/rainbow5.webp",
+        "thumbnail": "/images/rainbow/rainbow5.webp"
+      },
+      {
+        "original": "/images/rainbow/rainbow6L.webp",
+        "thumbnail": "/images/rainbow/rainbow6L.webp"
+      },
+      {
+        "original": "/images/rainbow/rainbow7.webp",
+        "thumbnail": "/images/rainbow/rainbow7.webp"
+      },
+      {
+        "original": "/images/rainbow/rainbow8.webp",
+        "thumbnail": "/images/rainbow/rainbow8.webp"
+      },
+      {
+        "original": "/images/rainbow/rainbow9.webp",
+        "thumbnail": "/images/rainbow/rainbow9.webp"
+      },
+      {
+        "original": "/images/rainbow/rainbow10.webp",
+        "thumbnail": "/images/rainbow/rainbow10.webp"
+      },
+      {
+        "original": "/images/rainbow/rainbow11.webp",
+        "thumbnail": "/images/rainbow/rainbow11.webp"
+      },
+      {
+        "original": "/images/rainbow/rainbow12.webp",
+        "thumbnail": "/images/rainbow/rainbow12.webp"
+      },
+      {
+        "original": "/images/rainbow/rainbow13.webp",
+        "thumbnail": "/images/rainbow/rainbow13.webp"
+      },
+      {
+        "original": "/images/rainbow/rainbow14L.webp",
+        "thumbnail": "/images/rainbow/rainbow14L.webp"
+      },
+      {
+        "original": "/images/rainbow/rainbow15L.webp",
+        "thumbnail": "/images/rainbow/rainbow15L.webp"
+      }
+    ]
   }
 ]

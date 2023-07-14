@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import { SizeContext } from "@app/size";
 import LinkBtn from "./LinkBtn";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
+
 import {
   Wrapper,
   CollectionsBtns,
@@ -24,9 +25,15 @@ interface IProps {
 
 const CollectionsNavBar: React.FC<IProps> = ({ collections }) => {
   const [activeIdx, setActiveIdx] = useState<number>(0);
+  const [animate, setAnimate] = useState<boolean>(false);
   const [width] = useContext<number[]>(SizeContext);
 
+  useEffect(() => {
+    if (animate) setTimeout(() => setAnimate(false), 1000);
+  }, [animate]);
+
   const handleIncrease = (): void => {
+    setAnimate(true);
     if (activeIdx + 1 <= collections.length - 1) {
       setActiveIdx((prevState) => prevState + 1);
     } else {
@@ -35,6 +42,7 @@ const CollectionsNavBar: React.FC<IProps> = ({ collections }) => {
   };
 
   const handleDecrease = (): void => {
+    setAnimate(true);
     if (activeIdx - 1 < 0) {
       setActiveIdx(collections.length - 1);
     } else {
@@ -43,6 +51,7 @@ const CollectionsNavBar: React.FC<IProps> = ({ collections }) => {
   };
 
   const handleOnClick = (name: string): void => {
+    setAnimate(true);
     setActiveIdx(
       collections.findIndex((collection) => collection.name === name)
     );
@@ -75,6 +84,7 @@ const CollectionsNavBar: React.FC<IProps> = ({ collections }) => {
             name={collections[firstLinkIdx].name}
             activeName={collections[activeIdx].name}
             onClick={handleOnClick}
+            animate={animate}
           />
         )}
         {width > 767 && (
@@ -82,6 +92,7 @@ const CollectionsNavBar: React.FC<IProps> = ({ collections }) => {
             name={collections[secondLinkIdx].name}
             activeName={collections[activeIdx].name}
             onClick={handleOnClick}
+            animate={animate}
           />
         )}
         <ActiveLink>
@@ -89,6 +100,7 @@ const CollectionsNavBar: React.FC<IProps> = ({ collections }) => {
             name={collections[activeIdx].name}
             activeName={collections[activeIdx].name}
             onClick={handleOnClick}
+            animate={animate}
           />
         </ActiveLink>
         {width > 767 && (
@@ -96,6 +108,7 @@ const CollectionsNavBar: React.FC<IProps> = ({ collections }) => {
             name={collections[fourthLinkIdx].name}
             activeName={collections[activeIdx].name}
             onClick={handleOnClick}
+            animate={animate}
           />
         )}
         {width > 1279 && (
@@ -103,6 +116,7 @@ const CollectionsNavBar: React.FC<IProps> = ({ collections }) => {
             name={collections[fifthLinkIdx].name}
             activeName={collections[activeIdx].name}
             onClick={handleOnClick}
+            animate={animate}
           />
         )}
       </CollectionsBtns>
