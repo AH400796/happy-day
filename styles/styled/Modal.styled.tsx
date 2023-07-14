@@ -22,7 +22,6 @@ export const ModalWindow = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #4e6739 0%, #93b674 100%);
   overflow: hidden;
 `;
 

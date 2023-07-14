@@ -51,6 +51,7 @@ export const VolumeInput = styled.input<any>`
   &[type="range"] {
     height: 40px;
     -webkit-appearance: none;
+    appearance: none;
     background: transparent;
   }
 
@@ -95,6 +96,7 @@ export const VolumeInput = styled.input<any>`
     }};
   }
   &[type="range"]::-moz-range-thumb {
+    appearance: none;
     -webkit-appearance: none;
     border: none;
     height: 20px;
@@ -121,6 +123,7 @@ export const VolumeInput = styled.input<any>`
 
   &[type="range"]::-ms-thumb {
     -webkit-appearance: none;
+    appearance: none;
     border: none;
     height: 20px;
     width: 3px;
@@ -201,6 +204,7 @@ export const HeroTitle = styled.h2`
   align-items: center;
   width: 100%;
   padding: 5px 0;
+  margin-top: 40px;
 
   font-size: 16px;
   font-weight: 700;

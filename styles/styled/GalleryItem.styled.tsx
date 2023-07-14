@@ -44,7 +44,7 @@ export const ItemWrapper = styled.div<IStyledCollectionProps>`
   align-items: center;
   align-self: flex-end;
   overflow: hidden;
-  background-color: #bbe29ba2;
+  background-color: #bbdf9e;
 
   box-shadow: 2px 3px 5px #bbb8b8;
   cursor: pointer;

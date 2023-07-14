@@ -68,3 +68,7 @@ export const ConditionsText = styled.div`
     font-size: 20px;
   }
 `;
+
+export const QuestLink = styled.a`
+  color: #f78629;
+`;

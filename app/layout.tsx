@@ -4,6 +4,8 @@ import StyledComponentsRegistry from "@utils/registry";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import ModalRoot from "@components/ModalRoot";
+import PopUp from "@components/PopUp";
+
 import SizeProvider from "./size";
 
 type LinkObjectType = {
@@ -51,6 +53,7 @@ const RootLayout: React.FC<Children> = ({ children }) => {
             </SizeProvider>
           </ContentWrapper>
           <Footer />
+          <PopUp />
           <ModalRoot />
         </StyledComponentsRegistry>
       </body>

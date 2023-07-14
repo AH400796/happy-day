@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 
-export const SliderTitle = styled.h2`
+export const SliderTitle = styled.h1`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,7 +10,7 @@ export const SliderTitle = styled.h2`
   padding: 5px 0;
 
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;

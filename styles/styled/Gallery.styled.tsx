@@ -16,6 +16,8 @@ export const GalleryList = styled.ul`
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 
 export const GalleryTitle = styled.h2`

@@ -67,3 +67,7 @@ export const ContactText = styled.div`
     font-size: 20px;
   }
 `;
+
+export const QuestLink = styled.a`
+  color: #f78629;
+`;

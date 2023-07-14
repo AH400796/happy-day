@@ -22,8 +22,8 @@ const Home = async () => {
       <Section>
         <Container>
           <ContentWrapper>
-            <Hero />
             <SliderOnMain />
+            <Hero />
           </ContentWrapper>
         </Container>
       </Section>

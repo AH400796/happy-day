@@ -39,7 +39,7 @@ export const PrevBtn = styled.button`
   width: 50px;
   height: 50px;
 
-  background-color: #fff;
+  background-color: transparent;
   border: none;
   outline: none;
   color: #5b6652;
