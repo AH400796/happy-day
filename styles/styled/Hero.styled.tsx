@@ -236,3 +236,10 @@ export const HeroTitle = styled.h2`
     background-position: center;
   }
 `;
+
+export const TitleHolder = styled.span`
+  width: 260px;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+`;

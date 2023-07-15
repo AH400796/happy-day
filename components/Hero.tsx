@@ -6,13 +6,14 @@ import { IoVolumeMute, IoVolumeHigh } from "react-icons/io5";
 
 import {
   HeroVideo,
-  HeroTitle, 
+  HeroTitle,
   HeroOverlay,
   HeroVideoWrapper,
   StyledButton,
   VolumeButton,
   VolumeInput,
   StyledVolumeButton,
+  TitleHolder,
 } from "@styles/styled/Hero.styled";
 
 const Hero: React.FC = () => {
@@ -62,7 +63,9 @@ const Hero: React.FC = () => {
   return (
     <>
       <HeroTitle>
-        Замовте індивідуальну чи групову професійну фотосесію
+        <TitleHolder>
+          Індивідуальна або групова професійна фотосесія
+        </TitleHolder>
       </HeroTitle>
       <HeroVideoWrapper>
         <HeroVideo

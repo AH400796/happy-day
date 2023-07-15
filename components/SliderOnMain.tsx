@@ -2,12 +2,18 @@
 
 import SwipperSlider from "@components/SwipperSlider";
 import collections from "@data/main_collections.json";
-import { SliderWrapper, SliderTitle } from "@styles/styled/SliderOnMain.styled";
+import {
+  SliderWrapper,
+  SliderTitle,
+  TitleHolder,
+} from "@styles/styled/SliderOnMain.styled";
 
 const SliderOnMain: React.FC = () => {
   return (
     <SliderWrapper>
-      <SliderTitle>Ефектні фото, що не залишать без емоцій</SliderTitle>
+      <SliderTitle>
+        <TitleHolder>Ефектні фото, що не залишать без емоцій</TitleHolder>
+      </SliderTitle>
       <>
         <SwipperSlider
           collections={collections}

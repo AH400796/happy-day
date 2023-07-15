@@ -44,3 +44,10 @@ export const SliderWrapper = styled.div`
   width: 100%;
   inline-size: 100%;
 `;
+
+export const TitleHolder = styled.span`
+  width: 260px;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+`;
