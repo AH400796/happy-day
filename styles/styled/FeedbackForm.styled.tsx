@@ -164,6 +164,7 @@ export const FeedbackBtn = styled.button`
   height: 35px;
   font-size: 14px;
   font-weight: 600;
+  text-transform: uppercase;
 
   border-radius: 10px;
   background: #4e6739;

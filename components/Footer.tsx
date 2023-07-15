@@ -20,7 +20,9 @@ const Footer: React.FC = () => {
             </FooterContacts>
             <FeedbackForm />
           </FooterContent>
-          <FooterText>© 2023</FooterText>
+          <FooterText>
+            <b>© 2023</b>
+          </FooterText>
         </FooterWrapper>
       </Container>
     </StyledFooter>

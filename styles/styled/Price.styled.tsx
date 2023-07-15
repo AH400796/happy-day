@@ -41,13 +41,11 @@ export const PriceTitle = styled.h2`
 `;
 
 export const PriceText = styled.p`
-  padding: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   text-indent: 20px;
-  background: linear-gradient(180deg, #bbe29b 0%, #ffffff 100%);
   color: #4e6739;
 
   @media screen and (min-width: 768px) {
@@ -59,8 +57,10 @@ export const PriceText = styled.p`
   }
 `;
 
-export const SpanStyled = styled.span`
-  padding-left: 20px;
+export const Remark = styled.div`
+  margin-bottom: 10px;
+  padding: 20px;
+  background: linear-gradient(180deg, #bbe29b 0%, #ffffff 100%);
 `;
 
 export const PricePackageWrapper = styled.ul`

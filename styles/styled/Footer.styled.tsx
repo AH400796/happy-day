@@ -50,7 +50,7 @@ export const FooterContent = styled.div`
 
 export const FooterText = styled.span`
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   color: #4e6739;
 `;
 

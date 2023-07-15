@@ -5,21 +5,21 @@ import { useState, useEffect } from "react";
 import {
   Wrapper,
   IconWrapper,
-  TextLink,
+  Text,
   ModalCloseBtn,
   Hand,
-  Circle,
-  InnerCircle,
 } from "@styles/styled/PopUp.styled";
 import { IoMdClose } from "react-icons/io";
-import { BsHandIndexThumbFill } from "react-icons/bs";
+import { FaHandPointLeft } from "react-icons/fa";
 
 const PopUp: React.FC = () => {
   const [shawPopUp, setShawPopUp] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setShawPopUp(true), 10000);
-  }, []);
+    if (!shawPopUp) {
+      setTimeout(() => setShawPopUp(true), 10000);
+    }
+  }, [shawPopUp]);
 
   const handleOnClick = () => {
     setShawPopUp(false);
@@ -30,29 +30,25 @@ const PopUp: React.FC = () => {
   };
 
   return (
-    shawPopUp && (
-      <Wrapper>
-        <TextLink
+    <Wrapper data-shaw={shawPopUp}>
+      <Text>
+        <strong>Не зволікайте! Замовте свою фотосесію вже сьогодні!</strong>
+        <IconWrapper
           onClick={handleOnPopUpClick}
           href="https://docs.google.com/forms/d/e/1FAIpQLSfEbmF__mD-L9v6G9iM3s1ZplhUyKzWEZxI1xT53MVJRRHRFQ/viewform?pli=1"
           target="_blank"
           rel="noopener noreferrer nofollow"
         >
-          <strong>Не зволікайте! Замовте фотосесію вже сьогодні!</strong>
-          <IconWrapper>
-            <Circle>
-              <InnerCircle></InnerCircle>
-            </Circle>
-            <Hand>
-              <BsHandIndexThumbFill size={25} color={"#f17209"} />
-            </Hand>
-          </IconWrapper>
-        </TextLink>
-        <ModalCloseBtn onClick={handleOnClick}>
-          <IoMdClose size={20} color={"#4e6739"} />
-        </ModalCloseBtn>
-      </Wrapper>
-    )
+          Хочу!
+          <Hand>
+            <FaHandPointLeft size={25} color={"inherit"} />
+          </Hand>
+        </IconWrapper>
+      </Text>
+      <ModalCloseBtn onClick={handleOnClick}>
+        <IoMdClose size={20} color={"inherit"} />
+      </ModalCloseBtn>
+    </Wrapper>
   );
 };
 

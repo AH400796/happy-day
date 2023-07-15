@@ -1,6 +1,7 @@
 "use client";
 
 import styled from "styled-components";
+import Link from "next/link";
 
 export const SliderTitle = styled.h1`
   display: flex;
@@ -50,4 +51,28 @@ export const TitleHolder = styled.span`
   @media screen and (min-width: 768px) {
     width: 100%;
   }
+`;
+
+export const SliderText = styled.p`
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-indent: 20px;
+  background: linear-gradient(180deg, #bbe29b 0%, #ffffff 100%);
+  color: #4e6739;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+  }
+`;
+
+export const LinkToCollections = styled(Link)`
+  color: #f17209;
+  font-weight: 700;
 `;

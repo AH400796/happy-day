@@ -13,7 +13,7 @@ import {
   FirstColTitle,
   SecondCol,
   PricePackageWrapper,
-  SpanStyled,
+  Remark,
   Promo,
   OldPrice,
 } from "@styles/styled/Price.styled";
@@ -22,10 +22,13 @@ const Price: React.FC = () => {
   return (
     <>
       <PriceTitle>Тарифні пакети</PriceTitle>
-      <PriceText>
-        Ознайомтесь з доступними тарифними пакетами і послугами, що в них
-        входять, та оберіть той, який Вам ідеально підійде!{" "}
-      </PriceText>
+      <Remark>
+        <PriceText>
+          Ознайомтесь з доступними тарифними пакетами і послугами, що в них
+          входять, та оберіть той, який Вам ідеально підійде!{" "}
+        </PriceText>
+      </Remark>
+
       <PricePackageWrapper>
         {/* GROUP VIP*/}
         <PricePackage>
@@ -394,15 +397,17 @@ const Price: React.FC = () => {
           </PackageWrapper>
         </PricePackage>
       </PricePackageWrapper>
-      <PriceText>
-        * Крім вище згаданих послуг та подарунків перелічених в пакетах, усім
-        дівчаткам залишаються тілесні колготи, які видаються для фотозйомки.
-        <br></br>
-        <SpanStyled>
-          ** По бажанню клієнти можуть приносити з собою свій <b>candy-bar</b> -
-          власний набір солодощів для зйомки.
-        </SpanStyled>
-      </PriceText>
+      <Remark>
+        <PriceText>* Усі ціни наведені в гривнях.</PriceText>
+        <PriceText>
+          ** Крім вище згаданих послуг та подарунків перелічених в пакетах, усім
+          дівчаткам залишаються тілесні колготи, які видаються для фотозйомки.
+        </PriceText>
+        <PriceText>
+          *** По бажанню клієнти можуть приносити з собою свій <b>candy-bar</b>{" "}
+          - власний набір солодощів для зйомки.
+        </PriceText>
+      </Remark>
     </>
   );
 };
