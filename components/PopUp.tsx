@@ -44,7 +44,7 @@ const PopUp: React.FC = () => {
               <InnerCircle></InnerCircle>
             </Circle>
             <Hand>
-              <BsHandIndexThumbFill size={25} color={"#f78629"} />
+              <BsHandIndexThumbFill size={25} color={"#f17209"} />
             </Hand>
           </IconWrapper>
         </TextLink>

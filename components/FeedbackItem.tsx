@@ -20,7 +20,7 @@ const FeedbackItem: React.FC<IProps> = ({ userName, userFeedback, rating }) => {
         <StyledName>{userName}</StyledName>
         <StyledRating>
           {rating}
-          <FaCrown size={15} color={"#f78629"} />
+          <FaCrown size={15} color={"#f17209"} />
         </StyledRating>
       </WrapperTitle>
       <StyledFeedback>{`"${userFeedback}"`}</StyledFeedback>

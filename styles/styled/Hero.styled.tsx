@@ -214,7 +214,7 @@ export const HeroTitle = styled.h2`
 
   border-radius: 10px 10px 0 0;
   border-bottom: 1px solid #93b674;
-  color: #f78629;
+  color: #f17209;
 
   @media screen and (min-width: 768px) {
     padding: 5px 10px;

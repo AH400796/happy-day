@@ -47,16 +47,16 @@ export const WrapperStyled = styled.div<IStyledProps>`
 
   font-size: 16px;
   font-weight: 700;
-  color: ${(props) => (props[`data-active`] ? "#f78629" : "#6d9150")};
+  color: ${(props) => (props[`data-active`] ? "#f17209" : "#6d9150")};
   border: ${(props) =>
-    props[`data-active`] ? "1px solid #f78629;" : "1px solid #cccac87b"};
+    props[`data-active`] ? "1px solid #f17209;" : "1px solid #cccac87b"};
 
   &:hover,
   &:focus {
     text-decoration: underline;
     border-color: transparent;
     background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
-    color: #f78629;
+    color: #f17209;
   }
 
   @media screen and (min-width: 1280px) {

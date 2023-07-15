@@ -47,7 +47,7 @@ export const PrevBtn = styled.button`
 
   &:hover,
   &:focus {
-    color: #f78629;
+    color: #f17209;
   }
 
   &:disabled {
@@ -72,7 +72,7 @@ export const NextBtn = styled.button`
 
   &:hover,
   &:focus {
-    color: #f78629;
+    color: #f17209;
   }
 
   &:disabled {

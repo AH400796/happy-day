@@ -50,8 +50,8 @@ export const ContactText = styled.a`
   &:hover,
   &:focus {
     background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
-    color: #f78629;
-    border: 1px solid #f78629;
+    color: #f17209;
+    border: 1px solid #f17209;
   }
 `;
 
@@ -62,7 +62,7 @@ export const StyledLink = styled.a`
 
   &:hover,
   &:focus {
-    color: #f78629;
+    color: #f17209;
   }
 `;
 
@@ -82,6 +82,6 @@ export const IconWrapper = styled.div`
   &:hover,
   &:focus {
     background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
-    border: 1px solid #f78629;
+    border: 1px solid #f17209;
   }
 `;

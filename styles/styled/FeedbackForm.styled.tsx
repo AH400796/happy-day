@@ -135,7 +135,7 @@ export const StyledRadioInput = styled.li<IStyledProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ${(props) => (props[`data-feedback`] ? "#f78629" : "#aaaaaa")};
+  color: ${(props) => (props[`data-feedback`] ? "#f17209" : "#aaaaaa")};
 `;
 
 export const RadioInput = styled(Field)`
@@ -179,7 +179,7 @@ export const FeedbackBtn = styled.button`
   &:hover,
   &:focus {
     background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
-    color: #f78629;
-    border: 1px solid #f78629;
+    color: #f17209;
+    border: 1px solid #f17209;
   }
 `;

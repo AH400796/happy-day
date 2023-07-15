@@ -37,7 +37,7 @@ export const ResetBtn = styled.button`
   &:hover,
   &:focus {
     background: #4e6739;
-    color: #f78629;
-    border: 1px solid #f78629;
+    color: #f17209;
+    border: 1px solid #f17209;
   }
 `;

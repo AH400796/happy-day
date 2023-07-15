@@ -46,7 +46,7 @@ const Feedback: React.FC = () => {
           {!isNaN(averageRating) && (
             <AverageRating>
               Оцінка клієнтів -{"  "} {roundedAverageRating}/5{" "}
-              <FaCrown size={25} color={"#f78629"} />
+              <FaCrown size={25} color={"#f17209"} />
             </AverageRating>
           )}
           <p>
