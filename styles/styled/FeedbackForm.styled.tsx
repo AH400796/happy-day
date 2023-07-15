@@ -87,7 +87,7 @@ export const StyledInput = styled(Field)`
   font-weight: 600;
   font-size: 14px;
   padding: 5px 5px 5px 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
 
   color: #4e6739;
@@ -115,7 +115,7 @@ export const StyledTextarea = styled.textarea`
   background: linear-gradient(180deg, #ffdd61 0%, #f5f0a6 100%);
   color: #4e6739;
 
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
   outline: none;
   resize: none;
@@ -166,10 +166,9 @@ export const FeedbackBtn = styled.button`
   font-weight: 600;
   text-transform: uppercase;
 
-  border-radius: 10px;
+  border-radius: 20px;
   background: #4e6739;
   border: 1px solid transparent;
-
   color: #ffdd61;
   cursor: pointer;
 
