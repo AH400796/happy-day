@@ -79,26 +79,41 @@ const Hero: React.FC = () => {
         </HeroVideo>
         <HeroOverlay>
           {!isPlaying && (
-            <StyledButton onClick={handlePlay}>
+            <StyledButton
+              onClick={handlePlay}
+              type="button"
+              aria-label="play button"
+            >
               <FaPlay size={15} color={"#ffdd61"} />
             </StyledButton>
           )}
           {isPlaying && (
-            <StyledButton onClick={handlePause}>
+            <StyledButton
+              onClick={handlePause}
+              type="button"
+              aria-label="pause button"
+            >
               <FaPause size={15} color={"#ffdd61"} />
             </StyledButton>
           )}
           <VolumeButton>
-            <StyledVolumeButton onClick={handleVolume}>
+            <StyledVolumeButton
+              onClick={handleVolume}
+              type="button"
+              aria-label="volume button"
+            >
               {volume !== 0 && <IoVolumeHigh size={25} color={"#ffdd61"} />}
               {volume === 0 && <IoVolumeMute size={25} color={"#ffdd61"} />}
             </StyledVolumeButton>
+            <label htmlFor="volume_input"></label>
             <VolumeInput
               type="range"
               min={0}
               max={1}
               step={0.01}
               value={volume}
+              name="volume"
+              id="volume_input"
               onChange={handleVolumeChange}
             />
           </VolumeButton>
