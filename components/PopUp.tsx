@@ -16,10 +16,8 @@ const PopUp: React.FC = () => {
   const [shawPopUp, setShawPopUp] = useState(false);
 
   useEffect(() => {
-    if (!shawPopUp) {
-      setTimeout(() => setShawPopUp(true), 10000);
-    }
-  }, [shawPopUp]);
+    setTimeout(() => setShawPopUp(true), 20000);
+  }, []);
 
   const handleOnClick = () => {
     setShawPopUp(false);
