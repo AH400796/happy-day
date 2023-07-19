@@ -27,11 +27,12 @@ const SliderOnMain: React.FC = () => {
             autoPlay={true}
             slideDuration={1000}
             slideInterval={4000}
+            additionalClass={"image-gallery-main"}
           />
         </>
       </SliderWrapper>
       <SliderText>
-        Сподобались фото і хочеш ознайомитимь з ними детальніше? Тоді мерщій до{" "}
+        Сподобались фото і хочеш ознайомитиcь з ними детальніше? Тоді мерщій до{" "}
         <LinkToCollections href="/collections/tiffany">
           фотоколекцій
         </LinkToCollections>

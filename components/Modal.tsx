@@ -41,7 +41,7 @@ const Modal: React.FC<IProps> = ({ onClose, children }) => {
       <ModalWindow>
         {children}
         <ModalCloseBtn onClick={() => onClose()}>
-          <IoMdClose size={40} color={"#fafafa"} />
+          <IoMdClose size={40} color={"inherit"} />
         </ModalCloseBtn>
       </ModalWindow>
     </Overlay>,

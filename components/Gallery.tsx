@@ -81,6 +81,7 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
             collections={collection.urls}
             showThumbnails={false}
             startIndex={startIndex}
+            additionalClass={"image-gallery-photo-gallery"}
           />
         </Modal>
       )}

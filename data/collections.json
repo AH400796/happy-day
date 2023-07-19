@@ -206,69 +206,69 @@
   },
   {
     "id": 4,
-    "name": "Barbi style",
+    "name": "Barbie and friends",
     "text1": "",
     "text2": "",
     "urls": [
       {
-        "original": "/images/tiffany/tiffany1.webp",
-        "thumbnail": "/images/tiffany/tiffany1.webp"
+        "original": "/images/barbie_party/barbie1.webp",
+        "thumbnail": "/images/barbie_party/barbie1.webp"
       },
       {
-        "original": "/images/tiffany/tiffany2.webp",
-        "thumbnail": "/images/tiffany/tiffany2.webp"
+        "original": "/images/barbie_party/barbie2.webp",
+        "thumbnail": "/images/barbie_party/barbie2.webp"
       },
       {
-        "original": "/images/tiffany/tiffany3.webp",
-        "thumbnail": "/images/tiffany/tiffany3.webp"
+        "original": "/images/barbie_party/barbie3.webp",
+        "thumbnail": "/images/barbie_party/barbie3.webp"
       },
       {
-        "original": "/images/tiffany/tiffany4.webp",
-        "thumbnail": "/images/tiffany/tiffany4.webp"
+        "original": "/images/barbie_party/barbie4.webp",
+        "thumbnail": "/images/barbie_party/barbie4.webp"
       },
       {
-        "original": "/images/tiffany/tiffany5.webp",
-        "thumbnail": "/images/tiffany/tiffany5.webp"
+        "original": "/images/barbie_party/barbie5L.webp",
+        "thumbnail": "/images/barbie_party/barbie5L.webp"
       },
       {
-        "original": "/images/tiffany/tiffany6L.webp",
-        "thumbnail": "/images/tiffany/tiffany6L.webp"
+        "original": "/images/barbie_party/barbie6.webp",
+        "thumbnail": "/images/barbie_party/barbie6.webp"
       },
       {
-        "original": "/images/tiffany/tiffany7.webp",
-        "thumbnail": "/images/tiffany/tiffany7.webp"
+        "original": "/images/barbie_party/barbie7L.webp",
+        "thumbnail": "/images/barbie_party/barbie7L.webp"
       },
       {
-        "original": "/images/tiffany/tiffany8L.webp",
-        "thumbnail": "/images/tiffany/tiffany8L.webp"
+        "original": "/images/barbie_party/barbie8.webp",
+        "thumbnail": "/images/barbie_party/barbie8.webp"
       },
       {
-        "original": "/images/tiffany/tiffany9.webp",
-        "thumbnail": "/images/tiffany/tiffany9.webp"
+        "original": "/images/barbie_party/barbie9L.webp",
+        "thumbnail": "/images/barbie_party/barbie9L.webp"
       },
       {
-        "original": "/images/tiffany/tiffany10.webp",
-        "thumbnail": "/images/tiffany/tiffany10.webp"
+        "original": "/images/barbie_party/barbie10L.webp",
+        "thumbnail": "/images/barbie_party/barbie10L.webp"
       },
       {
-        "original": "/images/tiffany/tiffany11.webp",
-        "thumbnail": "/images/tiffany/tiffany11.webp"
+        "original": "/images/barbie_party/barbie11.webp",
+        "thumbnail": "/images/barbie_party/barbie11.webp"
       },
       {
-        "original": "/images/tiffany/tiffany12.webp",
-        "thumbnail": "/images/tiffany/tiffany12.webp"
+        "original": "/images/barbie_party/barbie12L.webp",
+        "thumbnail": "/images/barbie_party/barbie12L.webp"
       },
       {
-        "original": "/images/tiffany/tiffany13.webp",
-        "thumbnail": "/images/tiffany/tiffany13.webp"
+        "original": "/images/barbie_party/barbie13L.webp",
+        "thumbnail": "/images/barbie_party/barbie13L.webp"
       },
       {
-        "original": "/images/tiffany/tiffany14.webp",
-        "thumbnail": "/images/tiffany/tiffany14.webp"
+        "original": "/images/barbie_party/barbie14.webp",
+        "thumbnail": "/images/barbie_party/barbie14.webp"
       },
       {
-        "original": "/images/tiffany/tiffany15.webp",
-        "thumbnail": "/images/tiffany/tiffany15.webp"
+        "original": "/images/barbie_party/barbie15.webp",
+        "thumbnail": "/images/barbie_party/barbie15.webp"
       }
     ]
   },
@@ -343,68 +343,68 @@
   {
     "id": 6,
     "name": "Home style",
-    "text1": "Колекція \"Дамашня\" захоплює ",
-    "text2": "Ця колекція ",
+    "text1": "Колекція \"Домашній стиль\" з одного боку приваблює своєю простотою, невимушеністю та легкістю кольорової гамми, а з іншого - чарує витонченістю, природньою красою та великою кількістю стильних аксесуарів та жіночих дрібничок, без яких ну ніяк не може обійтись жодна справжня дівчина...",
+    "text2": "Ця колекція підкреслить, що красивою можна і треба бути всюди - як на найдрайвовішій мегавечірці, так і просто у себе вдома, у зручному халатику, капцях та масці для сну.",
     "urls": [
       {
-        "original": "/images/rainbow/rainbow1.webp",
-        "thumbnail": "/images/rainbow/rainbow1.webp"
+        "original": "/images/home_style/homestyle1.webp",
+        "thumbnail": "/images/home_style/homestyle1.webp"
       },
       {
-        "original": "/images/rainbow/rainbow2.webp",
-        "thumbnail": "/images/rainbow/rainbow2.webp"
+        "original": "/images/home_style/homestyle2L.webp",
+        "thumbnail": "/images/home_style/homestyle2L.webp"
       },
       {
-        "original": "/images/rainbow/rainbow3L.webp",
-        "thumbnail": "/images/rainbow/rainbow3L.webp"
+        "original": "/images/home_style/homestyle3.webp",
+        "thumbnail": "/images/home_style/homestyle3.webp"
       },
       {
-        "original": "/images/rainbow/rainbow4L.webp",
-        "thumbnail": "/images/rainbow/rainbow4L.webp"
+        "original": "/images/home_style/homestyle4.webp",
+        "thumbnail": "/images/home_style/homestyle4.webp"
       },
       {
-        "original": "/images/rainbow/rainbow5.webp",
-        "thumbnail": "/images/rainbow/rainbow5.webp"
+        "original": "/images/home_style/homestyle5.webp",
+        "thumbnail": "/images/home_style/homestyle5.webp"
       },
       {
-        "original": "/images/rainbow/rainbow6L.webp",
-        "thumbnail": "/images/rainbow/rainbow6L.webp"
+        "original": "/images/home_style/homestyle6.webp",
+        "thumbnail": "/images/home_style/homestyle6.webp"
       },
       {
-        "original": "/images/rainbow/rainbow7.webp",
-        "thumbnail": "/images/rainbow/rainbow7.webp"
+        "original": "/images/home_style/homestyle7.webp",
+        "thumbnail": "/images/home_style/homestyle7.webp"
       },
       {
-        "original": "/images/rainbow/rainbow8.webp",
-        "thumbnail": "/images/rainbow/rainbow8.webp"
+        "original": "/images/home_style/homestyle8L.webp",
+        "thumbnail": "/images/home_style/homestyle8L.webp"
       },
       {
-        "original": "/images/rainbow/rainbow9.webp",
-        "thumbnail": "/images/rainbow/rainbow9.webp"
+        "original": "/images/home_style/homestyle9.webp",
+        "thumbnail": "/images/home_style/homestyle9.webp"
       },
       {
-        "original": "/images/rainbow/rainbow10.webp",
-        "thumbnail": "/images/rainbow/rainbow10.webp"
+        "original": "/images/home_style/homestyle10.webp",
+        "thumbnail": "/images/home_style/homestyle10.webp"
       },
       {
-        "original": "/images/rainbow/rainbow11.webp",
-        "thumbnail": "/images/rainbow/rainbow11.webp"
+        "original": "/images/home_style/homestyle11L.webp",
+        "thumbnail": "/images/home_style/homestyle11L.webp"
       },
       {
-        "original": "/images/rainbow/rainbow12.webp",
-        "thumbnail": "/images/rainbow/rainbow12.webp"
+        "original": "/images/home_style/homestyle12.webp",
+        "thumbnail": "/images/home_style/homestyle12.webp"
       },
       {
-        "original": "/images/rainbow/rainbow13.webp",
-        "thumbnail": "/images/rainbow/rainbow13.webp"
+        "original": "/images/home_style/homestyle13.webp",
+        "thumbnail": "/images/home_style/homestyle13.webp"
       },
       {
-        "original": "/images/rainbow/rainbow14L.webp",
-        "thumbnail": "/images/rainbow/rainbow14L.webp"
+        "original": "/images/home_style/homestyle14L.webp",
+        "thumbnail": "/images/home_style/homestyle14L.webp"
       },
       {
-        "original": "/images/rainbow/rainbow15L.webp",
-        "thumbnail": "/images/rainbow/rainbow15L.webp"
+        "original": "/images/home_style/homestyle15L.webp",
+        "thumbnail": "/images/home_style/homestyle15L.webp"
       }
     ]
   }

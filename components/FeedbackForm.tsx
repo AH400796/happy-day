@@ -42,11 +42,11 @@ const initialValues = {
   rating: "",
 };
 
-type Values = {
+interface IValues {
   userName: string;
   userFeedback: string;
   rating: string;
-};
+}
 
 const initialRatings = [1, 2, 3, 4, 5];
 
@@ -54,8 +54,8 @@ const FeedbackForm: React.FC = () => {
   const [feedbackRating, setFeedbackRating] = useState<number>(0);
 
   const handleOnSubmit = async (
-    values: Values,
-    { resetForm }: FormikHelpers<Values>
+    values: IValues,
+    { resetForm }: FormikHelpers<IValues>
   ) => {
     try {
       const response = await createFeedback(values);

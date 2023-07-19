@@ -35,7 +35,15 @@ export const ModalCloseBtn = styled.button`
   padding: 5px;
   border: none;
   outline: none;
+  color: #ffffff;
   background-color: transparent;
   cursor: pointer;
   filter: drop-shadow(2px 2px 2px #6e6e6e);
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: #f17209;
+    transform: scale(1.2);
+  }
 `;

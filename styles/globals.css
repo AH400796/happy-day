@@ -44,3 +44,38 @@ ol {
   padding: 0;
   list-style: none;
 }
+
+.image-gallery-main
+  .image-gallery-content
+  .image-gallery-slide
+  .image-gallery-image {
+  max-height: max-content;
+}
+
+.image-gallery-photo-gallery .image-gallery-left-nav .image-gallery-svg,
+.image-gallery-photo-gallery .image-gallery-right-nav .image-gallery-svg {
+  height: 48px;
+  width: 24px;
+}
+@media screen and (min-width: 768px) {
+  .image-gallery-photo-gallery .image-gallery-left-nav .image-gallery-svg,
+  .image-gallery-photo-gallery .image-gallery-right-nav .image-gallery-svg {
+    height: 60px;
+    width: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .image-gallery-photo-gallery .image-gallery-left-nav .image-gallery-svg,
+  .image-gallery-photo-gallery .image-gallery-right-nav .image-gallery-svg {
+    height: 80px;
+    width: 40px;
+  }
+}
+
+.image-gallery-photo-gallery .image-gallery-icon:hover {
+  color: #f17209;
+}
+
+.image-gallery-photo-gallery .image-gallery-icon:focus {
+  outline: 2px solid transparent;
+}
