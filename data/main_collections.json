@@ -1,8 +1,9 @@
 [
   {
-    "original": "/images/main_slider/rainbow3L.webp",
-    "thumbnail": "/images/main_slider/rainbow3L.webp"
+    "original": "/images/main_slider/barbie7L.webp",
+    "thumbnail": "/images/main_slider/barbie7L.webp"
   },
+
   {
     "original": "/images/main_slider/rainbow6L.webp",
     "thumbnail": "/images/main_slider/rainbow6L.webp"
@@ -12,11 +13,16 @@
     "thumbnail": "/images/main_slider/tiffany6L.webp"
   },
   {
+    "original": "/images/main_slider/homestyle2L.webp",
+    "thumbnail": "/images/main_slider/homestyle2L.webp"
+  },
+  {
     "original": "/images/main_slider/wednesday2L.webp",
     "thumbnail": "/images/main_slider/wednesday2L.webp"
   },
+
   {
-    "original": "/images/main_slider/rainbow4L.webp",
-    "thumbnail": "/images/main_slider/rainbow4L.webp"
+    "original": "/images/main_slider/rainbow3L.webp",
+    "thumbnail": "/images/main_slider/rainbow3L.webp"
   }
 ]

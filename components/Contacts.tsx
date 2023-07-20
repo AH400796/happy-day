@@ -19,16 +19,16 @@ const Contacts: React.FC = () => {
           height={20}
           alt="kyivstar"
         />
-        <ContactText href="tel:+380979814226">111 111-11-11</ContactText>
+        <ContactText href="tel:+380979814226">068 930-00-07</ContactText>
       </ContactWrapper>
       <ContactWrapper>
         <Image
-          src="/icons/icon_kyivstar.svg"
+          src="/icons/icon_vodafone.svg"
           width={20}
           height={20}
           alt="kyivstar"
         />
-        <ContactText href="tel:+380979566666">000 000-00-00</ContactText>
+        <ContactText href="tel:+380979566666">066 980-94-77</ContactText>
       </ContactWrapper>
       <SocialContacts>
         <StyledLink

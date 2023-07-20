@@ -34,6 +34,13 @@ export const StyledLink = styled(Link)<IStyledProps>`
     min-width: 200px;
     width: 200px;
   }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    border-color: transparent;
+    color: transparent;
+  }
 `;
 
 export const WrapperStyled = styled.div<IStyledProps>`
