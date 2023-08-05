@@ -70,9 +70,8 @@ const Hero: React.FC = () => {
       <HeroVideoWrapper>
         <HeroVideo
           disablePictureInPicture
-          // autoPlay
           loop
-          // poster="/images/tiff.jpeg"
+          poster="/poster.jpg"
           ref={videoRef}
         >
           <source src="/video/model.mp4" type="video/mp4" />

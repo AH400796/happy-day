@@ -41,7 +41,7 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
 
   const collection: ICollection = collections.filter(
     (collection) =>
-      collection.name.toLowerCase().replace(/\ /g, "_") === pathname.slice(13)
+      collection.name.toLowerCase().replace(/\ /g, "-") === pathname.slice(13)
   )[0];
 
   const handleOnClick = (url: string): void => {

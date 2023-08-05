@@ -21,10 +21,10 @@ const ActiveStyledLink: React.FC<{
     if (!isActive) {
       return;
     }
-    router.push(`/collections/${name.toLowerCase().replace(/\ /g, "_")}`);
+    router.push(`/collections/${name.toLowerCase().replace(/\ /g, "-")}`);
   }, [isActive, router, name]);
 
-  const href: string = `/collections/${name.toLowerCase().replace(/\ /g, "_")}`;
+  const href: string = `/collections/${name.toLowerCase().replace(/\ /g, "-")}`;
 
   return (
     <StyledLink

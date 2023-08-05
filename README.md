@@ -38,3 +38,17 @@ Docker short instruction:
 1. docker build -t happyday:latest .
 2. docker run -d -p 3000:3000 happyday
 3. docker start CONT_ID
+
+<!-- dynamicRoutes: [
+    {
+      route: "/collections/[collectionId]",
+      items: [
+        { id: "tiffany" },
+        { id: "wednesday" },
+        { id: "ukrainian_style" },
+        { id: "barbie_and_friends" },
+        { id: "colors_of_nature" },
+        { id: "home_style" },
+      ],
+    },
+  ], -->

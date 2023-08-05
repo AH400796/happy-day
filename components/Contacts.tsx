@@ -52,7 +52,7 @@ const Contacts: React.FC = () => {
           </IconWrapper>
         </StyledLink>
         <StyledLink
-          href="https://t.me/Julia_happy_day"
+          href="https://t.me/yours_happy_day_Julia"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="telegram"

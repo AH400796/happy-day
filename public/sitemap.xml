@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap><loc>http://localhost:3000/sitemap-0.xml</loc></sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://your-happy-day.lviv.ua</loc>
+    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-happy-day.lviv.ua/</loc>
+    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-happy-day.lviv.ua/about</loc>
+    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
+  </url>
+   <url>
+    <loc>https://your-happy-day.lviv.ua/collections</loc>
+    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-happy-day.lviv.ua/collections/tiffany</loc>
+    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-happy-day.lviv.ua/collections/wednesday</loc>
+    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-happy-day.lviv.ua/collections/ukrainian-style</loc>
+    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-happy-day.lviv.ua/collections/barbie-and-friends</loc>
+    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-happy-day.lviv.ua/collections/colors-of-nature</loc>
+    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-happy-day.lviv.ua/collections/home-style</loc>
+    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
+  </url>
+</urlset>
