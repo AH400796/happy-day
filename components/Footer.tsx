@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
             <FeedbackForm />
           </FooterContent>
           <FooterText>
-            <b>© 2023</b>
+            <b>© 2023</b> All rights reserved
           </FooterText>
         </FooterWrapper>
       </Container>

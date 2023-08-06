@@ -1,8 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl:
-    "https://www.your-happy-day.lviv.ua" || process.env.NEXT_PUBLIC_BASE_URL,
+  siteUrl: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
   staticRoutes: ["/", "/about", "/collections"],
   dynamicRoutes: async () => {
     return [

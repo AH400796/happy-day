@@ -1,10 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Modal from "@components/Modal";
 import SwipperSlider from "@components/SwipperSlider";
 import GalleryItem from "./GalleryItem";
+import Page404 from "@app/collections/[collectionId]/not-found";
 
 import {
   Wrapper,
@@ -28,8 +29,8 @@ interface IProps {
 const Gallery: React.FC<IProps> = ({ collections }) => {
   const [showSlider, setShowSlider] = useState<boolean>(false);
   const [startIndex, setStartIndex] = useState<number>(0);
-
   const pathname: string = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     if (showSlider) {
@@ -44,6 +45,11 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
       collection.name.toLowerCase().replace(/\ /g, "-") === pathname.slice(13)
   )[0];
 
+  // ?? collections[0]
+  // if (!collection) {
+  //   router.push(`/collections/tiffany`);
+  // }
+
   const handleOnClick = (url: string): void => {
     setShowSlider(true);
     const index: number = collection.urls.findIndex(
@@ -56,7 +62,7 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
     setShowSlider(false);
   };
 
-  return (
+  return collection ? (
     <Wrapper>
       <GalleryTitle>Колекція {`"${collection.name}"`}</GalleryTitle>
       <GalleryText>
@@ -86,6 +92,8 @@ const Gallery: React.FC<IProps> = ({ collections }) => {
         </Modal>
       )}
     </Wrapper>
+  ) : (
+    <Page404 />
   );
 };
 

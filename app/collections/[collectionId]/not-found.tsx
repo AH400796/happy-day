@@ -9,7 +9,8 @@ const Page404: React.FC = () => {
   const router = useRouter();
 
   useEffect(() => {
-    setTimeout(() => router.push("/"), 5000);
+    console.log("Error");
+    setTimeout(() => router.push("/collections/tiffany"), 5000);
   }, [router]);
 
   useEffect(() => {
@@ -30,7 +31,7 @@ const Page404: React.FC = () => {
     <Wrapper>
       <Image src="/404.svg" width={150} height={100} alt="404" />
       <Text>
-        Таку сторінку не знайдено. Ви будете перенаправлені на головну сторінку
+        Таку колекцію не знайдено. Ви будете перескеровані на іншу колекцію
         через {redirectTime} секунд
       </Text>
     </Wrapper>
